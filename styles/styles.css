@@ -1,1 +1,39 @@
+/* HTML */
+ {
+    box-sizing: border-box;
+}
 
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-identity img {
+    width: 15em;
+}
+
+/* Body */
+
+.path {
+    fill: none;
+    stroke: pink;
+    stroke-width: 2px;
+    height: 38.4px;
+    z-index: 2;
+}
+
+.hero {
+    width: 100vw;
+    z-index: 0;
+}
