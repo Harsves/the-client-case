@@ -66,7 +66,8 @@ header {
 .nav {
     background: linear-gradient(90deg, rgba(186,0,95,1) 28%, rgba(227,0,89,1) 100%);
     height: 100px;
-    
+    height: 100px;
+    padding-top: 55px;
 }
 
 ul {
@@ -74,6 +75,7 @@ ul {
     justify-content: space-around;
     align-items: flex-end;
     list-style-type: none;
+    padding: 0px;
 }
 
 a {
@@ -166,7 +168,6 @@ details[open] > p {
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    display: flex;
 }
 
 pre {
