@@ -29,21 +29,7 @@
     </header>
 
     
-        <div class="path">
-            <svg viewbox="1 -1 100 100">
-                <path d="
-                M 0, 0 
-                L 65, 0
-                Q 70, 0
-                  70, 5
-                L 70, 5
-                Q 70, 10
-                  75, 10
-                L 100, 10
-                "/>
-                </svg>
-        </div>
-
+ 
         <div class="menu">
             <div class="gradient"></div>
             </div>
@@ -65,74 +51,124 @@
                     <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
                     <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
                     <p>In de code ziet dat er zo uit:</p>
-                   <pre class="code"><span class="tag">1  |  &lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span><span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
+                   <pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
                     <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
             </details>
 
             <details>
                 <summary>Geef complexe afbeeldingen een langere beschrijving</summary>
                     <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de omringende tekst.</p>
-                   <pre class="code">
-                    <span class="token">
-                    <span class="tag">1  |  &lt;</span>
-                    <span class="attr-name">img src</span>
-                    <span class="tag">=“</span>
-                    <span class="attr-value">grafiek.jpg</span>
-                    <span class="tag">“</span>
-                    <span class="attr-name">alt</span>
-                    <span class="tag">=“</span>
-                    <span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span>
-                    <span class="tag">“&gt;</span>
-                </span>
-            
-                <span class="token">
-                    <span style="color: #000;">2  |  &lt;</span>
-                    <span style="color:#E4505A">div</span>
-                    <span style="color: #000;">&gt;</span>
-                    <span style="color: #000;">&lt;</span>
-                    <span style="color:#E4505A">p</span>
-                    <span style="color: #000;">&gt;</span>
-                    <span style="color: #000;">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span>
-                    <span style="color: #000;">&lt;/</span>
-                    <span style="color:#E4505A">p</span>
-                    <span style="color: #000;">&gt;</span>
-                </span>
-                </pre>
-                    <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span>
+<span class="tag">3  |  </span>   <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="tag">4  |  </span>      <span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="tag">5  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="tag">6  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span class="tag">7  |  </span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+                    <p>Een langere beschrijving mag ook op een aparte pagina worden geplaatst. Plaats dan een link met de verwijzing naar die andere pagina direct voor of na de afbeelding.</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”/langere-beschrijving.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
+                    <p>De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. Dit is geen verplichting maar wel erg handig. Hiervoor kan gebruik worden gemaakt van het <code>aria-describedby</code>-attribuut. Gebruik het <code>ID</code> van het element waar de complexe afbeelding beschreven wordt. Deze informatie hoort dan ook zichtbaar te zijn voor bezoekers die wel kunnen zien.</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span class="tag">3  |  </span>   <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="tag">4  |  </span>      <span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="tag">5  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="tag">6  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span class="tag">7  |  </span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
                 </details>
 
                 <details>
                     <summary>Geef afbeeldingen die ook een link zijn 
                         een tekstalternatief dat het doel van de link beschrijft</summary>
-                        <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de omringende tekst.</p>
-                       <pre class="code">
-                        <span class="token">
-                        <span class="tag">1  |  &lt;</span>
-                        <span class="attr-name">img src</span>
-                        <span class="tag">=“</span>
-                        <span class="attr-value">grafiek.jpg</span>
-                        <span class="tag">“</span>
-                        <span class="attr-name">alt</span>
-                        <span class="tag">=“</span>
-                        <span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span>
-                        <span class="tag">“&gt;</span>
-                    </span>
-                    <br>
-                    <span class="token">
-                        <span style="color: #000;">2  |  &lt;</span>
-                        <span style="color:#E4505A">div</span>
-                        <span style="color: #000;">&gt;</span>
-                        <span style="color: #000;">&lt;</span>
-                        <span style="color:#E4505A">p</span>
-                        <span style="color: #000;">&gt;</span>
-                        <span style="color: #000;">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span>
-                        <span style="color: #000;">&lt;/</span>
-                        <span style="color:#E4505A">p</span>
-                        <span style="color: #000;">&gt;</span>
-                    </span>
-                    </pre>
+                        <p>In de gevallen dat niet tekst maar alleen een afbeelding als link wordt gebruikt, spreken we over functionele afbeeldingen. Dit kunnen afbeeldingen zijn die verwijzen naar een andere pagina of website, maar ook afbeeldingen die een actie op de pagina uitvoeren.</p>
+                        <p>Deze afbeeldingen moeten een tekstalternatief hebben dat het doel van de link beschrijft, of die beschrijft wat er gebeurd als op de afbeelding wordt geklikt. Voorleessoftware gebruikt het tekstalternatief namelijk als linktekst. Daarom is het belangrijker om het doel van de link te beschrijven, in plaats van wat er op de afbeelding te zien is.</p>
+                        <p>Als er ook tekst staat op een functionele afbeelding, dan moeten de tekst op de afbeelding én het doel van de link allebei in het tekstalternatief worden vermeld. Hierdoor kunnen bezoekers die met spraakherkenning werken de link ook makkelijk bereiken.</p>
+                        <div class="info">
+                            <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                            <div class="info-discription">
+                                <p>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als link naar een Twitter.com.</p>
+                            </div>
+                        </div>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”categorie/spelletjes.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="tag">&gt;</span>
+<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">monopoly.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Ga naar de categorie spelletjes</span><span class="tag">“&gt;</span>
+<span class="tag">3  |  </span><span class="tag">&lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
                         <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
                     </details>
+
+                    <details>
+                        <summary>Zorg dat decoratieve afbeeldingen door
+                            hulptechnologieën genegeerd kunnen worden</summary>
+                            <p>Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te hebben. Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en niet noodzakelijk zijn voor het begrijpen van de tekst. Deze afbeeldingen moeten worden genegeerd door hulptechnologieën. Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">div class</span><span class="tag">="</span><span class="attr-value">line</span><span class="tag">"&gt;</span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<br>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="url">.line</span><span class="tag">{</span>
+<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="property">background-image</span><span class="tag">:</span><span class="property">url</span><span class="tag">(</span> <span class="url">"horizontale-lijn.jpg"</span><span class="tag">);</span>
+<span class="tag">3  |  </span><span class="tag">}</span></pre>
+<br>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">="</span><span class="attr-value">horizontale-lijn.jpg</span> <span class="attr-name">alt</span><span class="tag">=" "</span> <span class="tag">/</span><span class="tag">&gt;</span></pre>
+                     
+                            <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
+                            <div class="info">
+                                <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                                <div class="info-discription">
+                                    <p>Let op: Dit kan in bepaalde gevallen ook worden gedaan met ARIA <code>role="presentation"</code> of <code>aria-hidden="true"</code>.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details>
+                            <summary>Gebruik geen afbeelding van tekst</summary>
+                                <p>Gebruik geen afbeeldingen van tekst om informatie over te dragen. Afbeeldingen van tekst zijn voor sommige bezoekers niet handig. De lettergrootte in een afbeelding schaalt namelijk vaak niet goed mee. Ook kunnen bezoekers tekst die is ingebakken in een afbeelding niet aanpassen naar eigen voorkeuren.</p>
+                                <p>Gebruik daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan goed worden vormgegeven met CSS. Hiermee kan bijvoorbeeld de kleur, het lettertype, de lettergrootte, de regelhoogte en de letterafstand en worden ingesteld. Eventueel kan tekst met CSS ook bovenop een afbeelding worden geplaatst.</p>
+                                <div class="info">
+                                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                                    <div class="info-discription">
+                                        <p>Er zijn een paar uitzonderingen waarbij een afbeelding van tekst wél mag worden gebruikt:
+                                            <ol>
+                                            <li>Met HTML en CSS kan niet dezelfde visuele weergave worden bereikt.</li>
+                                            <li>De weergave van de tekst in de afbeelding is essentieel voor de informatie die wordt overgebracht.</il>
+                                            <li>De afbeelding van tekst kan worden aangepast naar de voorkeuren van de bezoeker.</li>
+                                            </ol></p>
+                                        </div>
+                                </div>
+                            </details>
+
+                            <details>
+                                <summary>Zorg dat bewegende content kan worden
+                                    gepauzeerd, gestopt of worden uitgezet</summary>
+                                    <p>Zorg dat alle bewegende, scrollende of knipperende content dat automatisch start én langer dan 5 seconden duurt kan worden gepauzeerd, gestopt of worden uitgezet. Onder bewegende, scrollende of knipperende content vallen onder andere carrousels, animaties op de pagina, bewegende advertenties, enz. Bezoekers met een cognitieve beperking kunnen er door worden afgeleid. Ook voor bezoekers die gebruik maken van een schermlezer kan dit storend zijn.</p>
+                                    <p>Deze regels gelden ook alle automatisch verversende content, maar hiervoor geldt ook de frequentie van updates mag worden aangepast.</p>
+                                </details>
+
+                                <details>
+                                    <summary>Gebruik geen content dat meer dan 
+                                        3 keer per seconde flitst</summary>
+                                        <p>Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde flitsen. Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken naar knipperende of flitsende afbeeldingen of media.</p>
+                                    </details>
+
+                                    <details>
+                                        <summary>Zorg dat afbeeldingen in de code een 
+                                            tekstalternatief kunnen krijgen</summary>
+                                            <p>Alle afbeeldingen moeten een tekstalternatief hebben. Een tekstalternatief kan op verschillende manieren worden toegevoegd:</p>
+                                            <h4>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h4>
+                                            <p>Bij een <code>&lt;img&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het alt-attribuut.</p>
+                                            <p>In de code ziet dat er zo uit:</p>  
+                                            <pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">hond.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Hond speelt met een bal</span><span class="tag">“&gt;</span></pre>
+                                            <h4>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h4>
+                                            <p>Bij een <code>&lt;svg&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het <code>title</code>-element in de svg. Gebruik ook aria-attribuut <code>role="img"</code> om ervoor te zorgen dat zo veel mogelijk ondersteunende technologieën het <code>&lt;svg&gt;</code>-element herkennen als een afbeelding.</p>
+                                            <p>In de code ziet dat er zo uit:</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">svg role</span><span class="tag">=“</span><span class="attr-value">img</span><span class="tag">“&gt;</span>    
+<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="attr-name">title</span><span class="tag">&gt; Hond speelt met een bal &lt;/</span><span class="attr-name">title</span><span class="tag">&gt;</span>
+<span class="tag">3  |  </span>   <span class="tag">...</span> 
+<span class="tag">4  |  </span><span class="tag">&lt;/</span><span class="attr-name">svg</span><span class="tag">&gt;</span></pre>     
+                                            <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
+                                            <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een <code>aria-label.</code></p>
+                                            <p>In de code ziet dat er zo uit:</p>
+<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">=</span><span class="attr-value">"logo"</span> <span class="attr-name">aria-label</span><span class="tag">=</span><span class="attr-value">”Hond speelt met een bal”</span><span class="tag">&gt; &lt;/</span> <span class="attr-name">div</span><span class="tag">"&gt;</span></pre>
+                                            <h4>Invulling van het Tekstalternatief</h4>
+                                            <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In veel gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op de afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan is het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.</p>
+                                </details>
 
         </div>
 

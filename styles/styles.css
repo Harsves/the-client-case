@@ -46,7 +46,7 @@ header {
     clip-path: path(" M 0, 30 L 240, 30 Q 245, 30 245, 25 L 245, 5 Q 245, 0 250, 0 L 390, 0 390, 200 0, 200");
 }
 
-    .gradient {
+.gradient {
     position: relative;
     top: 0;
     left: 0;
@@ -104,6 +104,7 @@ a {
 
 .afbeeldingen {
     margin: 20px;
+    padding-bottom: 20px;
 }
 
 .afbeeldingen h3 {
@@ -170,6 +171,11 @@ pre {
 }
 
 code {
+    font-size: 1rem;
+    font-family: fira-sans-2, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
     padding: 0 0.25rem;
     margin: 0 0.25rem;
     border: 1px solid #494f55;
@@ -189,6 +195,51 @@ code {
     color: #3D9C7E;
 } 
 
-.token {
+.url {
+    color: #0b6ba2;
+}
+
+.property {
+    color: #c96d18;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: fira-sans, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Info */
+
+.info {
     display: flex;
+    border-color: #0b6ba2;
+    background-color: #e0f7ff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-left: 2px solid #0b6ba2;
+    border-radius: 5px;
+}
+
+.info p {
+    font-size: 1rem;
+    font-family: fira-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    margin: 10px; 
+}
+
+.info li {
+    font-size: 1rem;
+    font-family: fira-sans-2, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    margin: 10px; 
 }
