@@ -24,17 +24,10 @@ header {
 
 .site-identity img {
     width: 15em;
+    
 }
 
 /* Body */
-
-.path {
-    fill: none;
-    stroke: #B9005F;
-    stroke-width: 2px;
-    height: 38.4px;
-    z-index: 2;
-}
 
 .hero {
     width: 100vw;
@@ -50,8 +43,10 @@ header {
     background-size: cover;
     width: auto;
     height: 200px;
+    clip-path: path(" M 0, 30 L 240, 30 Q 245, 30 245, 25 L 245, 5 Q 245, 0 250, 0 L 390, 0 390, 200 0, 200");
 }
-.gradient {
+
+    .gradient {
     position: relative;
     top: 0;
     left: 0;
