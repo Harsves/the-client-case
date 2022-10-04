@@ -37,7 +37,7 @@ header {
 }
 
 .menu {
-    background-image: url('	file:///Users/suusharsveld/Desktop/HVA/Github/the-client-case/assets/hero.jpg');
+    background-image: url('/assets/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
