@@ -37,7 +37,7 @@ header {
 }
 
 .menu {
-    background-image: url("https://github.com/Harsves/the-client-case/blob/d3767738e92abbea59673eb542a42622a232f805/assets/hero.jpg");
+    background-image: url("../assets/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
