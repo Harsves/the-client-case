@@ -261,7 +261,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
                             <p>Let op: Placeholdertekst mag niet als enige manier worden gebruikt om een label toe te voegen aan een invoerveld.</p>
                         </div>
-
+                        <h4>Groepeer meerdere secties van gerelateerde invoervelden</h4>
+                        <p>Als een formulier meerdere secties van gerelateerde invoervelden heeft dan wordt een <code>&lt;fieldset&gt;</code>-element gebruikt om deze te groeperen. Geef het <code>&lt;fieldset&gt;</code>-element een label door een <code>&lt;legend&gt;</code>-element in het <code>&lt;fieldset&gt;</code>-element te plaatsen. Hulptechnologieën gebruiken het <code>&lt;legend&gt;</code>-element alsof het een onderdeel is van het label van de elementen in het <code>&lt;fieldset&gt;</code>-element.</p>
+                        <p>Het <code>&lt;fieldset&gt;</code>-element is vooral relevant voor het groeperen selectierondjes en keuzevakjes maar kan ook worden gebruikt om andere invoervelden te groeperen.</p>
+                        <p>In de code ziet dat er zo uit:</p>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span>
+<span id="code">    <span class="tag">&lt;</span><span class="attr-name">legend</span><span class="tag">&gt;</span><span class="tag">Ben jij al orgaandonor?</span><span class="tag">&lt;/</span><span class="attr-name">legend</span><span class="tag">&gt;</span>
+<span id="code"> </span>
+<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span>
 
                 </details>
     
