@@ -155,6 +155,7 @@ details > p {
     font-style: normal;
     text-decoration: none;
     padding: 10px;
+    max-width: 30rem;
 }
 
 #code {
@@ -224,6 +225,7 @@ h4 {
     margin-bottom: 10px;
     margin-top: 20px;
     padding: 10px;
+    max-width: 30rem;
 }
 
 h5 {
@@ -235,6 +237,7 @@ h5 {
     margin-bottom: 10px;
     margin-top: 20px;
     padding: 10px;
+    max-width: 30rem;
 }
 
 .bediening {
@@ -284,6 +287,7 @@ h5 {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
+    max-width: 30rem;
 }
 
 .info li {
