@@ -259,11 +259,10 @@ h4 {
     display: flex;
     border-color: #0b6ba2;
     background-color: #e0f7ff;
-    margin-top: 20px;
-    margin-bottom: 20px;
     align-items: center;
     border-left: 2px solid #0b6ba2;
     border-radius: 5px;
+    margin: 20px 10px;
 }
 
 .info p {
@@ -303,11 +302,11 @@ details > ul {
     display: flex;
     border-color: #c96d18;
     background-color: #fffbeb;
-    margin-top: 20px;
-    margin-bottom: 20px;
     align-items: center;
-    border-left: 2px solid #0b6ba2;
+    border-left: 2px solid #c96d18;
     border-radius: 5px;
+    margin: 0px 10px;
+    margin-top: 20px;
 }
 
 .warning p {
@@ -319,3 +318,8 @@ details > ul {
     margin: 10px; 
 }
 
+.warning > svg {
+    padding-left: 10px;
+    width: 200px;
+    fill: #c96d18;
+}
