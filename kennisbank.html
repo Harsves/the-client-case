@@ -51,31 +51,31 @@
                     <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
                     <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
                     <p>In de code ziet dat er zo uit:</p>
-                   <pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
+                   <pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
                     <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
             </details>
 
             <details>
                 <summary>Geef complexe afbeeldingen een langere beschrijving</summary>
                     <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de omringende tekst.</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
-<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span>
-<span class="tag">3  |  </span>   <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span class="tag">4  |  </span>      <span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span class="tag">5  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span class="tag">6  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
-<span class="tag">7  |  </span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
                     <p>Een langere beschrijving mag ook op een aparte pagina worden geplaatst. Plaats dan een link met de verwijzing naar die andere pagina direct voor of na de afbeelding.</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
-<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”/langere-beschrijving.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”/langere-beschrijving.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
                     <p>De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. Dit is geen verplichting maar wel erg handig. Hiervoor kan gebruik worden gemaakt van het <code>aria-describedby</code>-attribuut. Gebruik het <code>ID</code> van het element waar de complexe afbeelding beschreven wordt. Deze informatie hoort dan ook zichtbaar te zijn voor bezoekers die wel kunnen zien.</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
-<span class="tag">2  |  </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
-<span class="tag">3  |  </span>   <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span class="tag">4  |  </span>      <span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span class="tag">5  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span class="tag">6  |  </span>      <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
-<span class="tag">7  |  </span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
                 </details>
 
                 <details>
@@ -90,9 +90,9 @@
                                 <p>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als link naar een Twitter.com.</p>
                             </div>
                         </div>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”categorie/spelletjes.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="tag">&gt;</span>
-<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">monopoly.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Ga naar de categorie spelletjes</span><span class="tag">“&gt;</span>
-<span class="tag">3  |  </span><span class="tag">&lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
+<pre id="code"><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”categorie/spelletjes.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">monopoly.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Ga naar de categorie spelletjes</span><span class="tag">“&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
                         <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
                     </details>
 
@@ -100,13 +100,13 @@
                         <summary>Zorg dat decoratieve afbeeldingen door
                             hulptechnologieën genegeerd kunnen worden</summary>
                             <p>Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te hebben. Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en niet noodzakelijk zijn voor het begrijpen van de tekst. Deze afbeeldingen moeten worden genegeerd door hulptechnologieën. Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">div class</span><span class="tag">="</span><span class="attr-value">line</span><span class="tag">"&gt;</span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">div class</span><span class="tag">="</span><span class="attr-value">line</span><span class="tag">"&gt;</span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
 <br>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="url">.line</span><span class="tag">{</span>
-<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="property">background-image</span><span class="tag">:</span><span class="property">url</span><span class="tag">(</span> <span class="url">"horizontale-lijn.jpg"</span><span class="tag">);</span>
-<span class="tag">3  |  </span><span class="tag">}</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="url">line</span> <span class="tag">{</span>
+<span id="code">    <span class="tag">&lt;</span><span class="property">background-image</span><span class="tag">:</span> <span class="property">url</span><span class="tag">(</span> <span class="url">"horizontale-lijn.jpg"</span><span class="tag">);</span>
+<span id="code"> <span class="tag">}</span></pre>
 <br>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">="</span><span class="attr-value">horizontale-lijn.jpg</span> <span class="attr-name">alt</span><span class="tag">=" "</span> <span class="tag">/</span><span class="tag">&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">="</span><span class="attr-value">horizontale-lijn.jpg</span> <span class="attr-name">alt</span><span class="tag">=" "</span> <span class="tag">/</span><span class="tag">&gt;</span></pre>
                      
                             <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
                             <div class="info">
@@ -122,7 +122,7 @@
                                 <p>Gebruik geen afbeeldingen van tekst om informatie over te dragen. Afbeeldingen van tekst zijn voor sommige bezoekers niet handig. De lettergrootte in een afbeelding schaalt namelijk vaak niet goed mee. Ook kunnen bezoekers tekst die is ingebakken in een afbeelding niet aanpassen naar eigen voorkeuren.</p>
                                 <p>Gebruik daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan goed worden vormgegeven met CSS. Hiermee kan bijvoorbeeld de kleur, het lettertype, de lettergrootte, de regelhoogte en de letterafstand en worden ingesteld. Eventueel kan tekst met CSS ook bovenop een afbeelding worden geplaatst.</p>
                                 <div class="info">
-                                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/></svg>
                                     <div class="info-discription">
                                         <p>Er zijn een paar uitzonderingen waarbij een afbeelding van tekst wél mag worden gebruikt:
                                             <ol>
@@ -154,38 +154,135 @@
                                             <h4>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h4>
                                             <p>Bij een <code>&lt;img&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het alt-attribuut.</p>
                                             <p>In de code ziet dat er zo uit:</p>  
-                                            <pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">hond.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Hond speelt met een bal</span><span class="tag">“&gt;</span></pre>
+                                            <pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">hond.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Hond speelt met een bal</span><span class="tag">“&gt;</span></pre>
                                             <h4>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h4>
                                             <p>Bij een <code>&lt;svg&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het <code>title</code>-element in de svg. Gebruik ook aria-attribuut <code>role="img"</code> om ervoor te zorgen dat zo veel mogelijk ondersteunende technologieën het <code>&lt;svg&gt;</code>-element herkennen als een afbeelding.</p>
                                             <p>In de code ziet dat er zo uit:</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">svg role</span><span class="tag">=“</span><span class="attr-value">img</span><span class="tag">“&gt;</span>    
-<span class="tag">2  |  </span>   <span class="tag">&lt;</span><span class="attr-name">title</span><span class="tag">&gt; Hond speelt met een bal &lt;/</span><span class="attr-name">title</span><span class="tag">&gt;</span>
-<span class="tag">3  |  </span>   <span class="tag">...</span> 
-<span class="tag">4  |  </span><span class="tag">&lt;/</span><span class="attr-name">svg</span><span class="tag">&gt;</span></pre>     
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">svg role</span><span class="tag">=“</span><span class="attr-value">img</span><span class="tag">“&gt;</span>    
+<span id="code"> <span class="tag">   &lt;</span><span class="attr-name">title</span><span class="tag">&gt; Hond speelt met een bal &lt;/</span><span class="attr-name">title</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">   ...</span>
+<span id="code"> <span class="tag">&lt;/</span><span class="attr-name">svg</span><span class="tag">&gt;</span></pre>     
                                             <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
                                             <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een <code>aria-label.</code></p>
                                             <p>In de code ziet dat er zo uit:</p>
-<pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">=</span><span class="attr-value">"logo"</span> <span class="attr-name">aria-label</span><span class="tag">=</span><span class="attr-value">”Hond speelt met een bal”</span><span class="tag">&gt; &lt;/</span> <span class="attr-name">div</span><span class="tag">"&gt;</span></pre>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">=</span><span class="attr-value">"logo"</span> <span class="attr-name">aria-label</span><span class="tag">=</span><span class="attr-value">”Hond speelt met een bal”</span><span class="tag">&gt; &lt;/</span> <span class="attr-name">div</span><span class="tag">"&gt;</span></pre>
                                             <h4>Invulling van het Tekstalternatief</h4>
                                             <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In veel gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op de afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan is het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.</p>
                                 </details>
 
         </div>
 
-        <div class="Bediening">
+        <div class="bediening">
             <h3>Bediening</h3>
         
             <details>
-                <summary>Geef afbeelding die informatie
-                    overdraagt een beschrijvend
-                    tekstalternatief</summary>
-                    <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
-                    <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
-                    <p>In de code ziet dat er zo uit:</p>
-                   <pre class="code"><span class="tag">1  |  </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
-                    <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
+                <summary>Gebruik niet alleen apparaatbewegingen voor het uitvoeren van een actie</summary>
+                    <p>Acties die in worden geactiveerd door een apparaat te kantelen of te schudden zijn niet goed toegankelijk voor sommige bezoekers. Bezoekers met een motorische beperking kunnen deze acties bijvoorbeeld onbedoeld uitvoeren. Er zijn ook bezoekers die dit niet, of niet goed, kunnen bedienen omdat het apparaat op een vaste plek is bevestigd aan bijvoorbeeld een rolstoel. Ook het maken van gebaren naar een camera die deze de bewegingen kan interpreteren valt onder bewegingsactivering.</p>
+                    <p>Laat bezoekers daarom de bewegingsactivering uitschakelen of zorg dat acties die kunnen worden geactiveerd met bewegingsactivering ook te activeren zijn met een alternatieve bediening.</p>
+            </details>
+
+            <details>
+                <summary>Zorg dat alle functies te bereiken en gebruiken zijn met alleen het toetsenbord</summary>
+                    <p>Alle functies op een website moeten te bereiken en gebruiken zijn met alleen het toetsenbord. Sommige bezoekers kunnen geen muis gebruiken door bijvoorbeeld een visuele of motorische beperking. Als alle functionaliteit met het toetsenbord kan worden bediend, dan werkt deze ook met een groot aantal hulptechnologieën. Zorg daarom dat onderdelen zoals links, knoppen, navigatie, invoervelden, selectievakjes, keuzerondjes, keuzelijsten en alle andere interactieve functies de toetsenbordfocus kunnen krijgen en kunnen worden gebruikt.</p>
+                    <p>Standaard HTML-elementen voor links, knoppen en formulierelementen op de website zijn goed toegankelijk met het toetsenbord.</p>
+                    <p>De standaard toetsenbordnavigatie is als volgt:</p>
+                    <ul>
+                        <li>Met TAB navigeert de toetsenbordfocus vooruit.</li>
+                        <li>Met SHIFT + TAB navigeert de toetsenbordfocus achteruit.</li>
+                        <li>Met de pijltoetsen kan worden genavigeerd in gegroepeerde menu’s of radiobuttons.</li>
+                    </ul>
+                    <p>Bezoekers die gebruik maken van het toetsenbord gebruiken de TAB-toets om door een website te navigeren. De TAB-toets verplaatst de toetsenbordfocus naar het volgende focuseerbare onderdeel.</p>
+            </details>
+
+            <details>
+                <summary>Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten op de pagina</summary>
+                    <p>Als bezoekers met het toetsenbord naar een onderdeel op de pagina kunnen navigeren, maar er niet meer vandaan kunnen dan is dit een toetsenbordval. Om uit een toetsenbordval te raken is de enige manier vaak om de muis (of ander aanwijsapparaat) te gebruiken of om de pagina helemaal te herladen. Dit is dit geen optie voor bezoekers die geen gebruik kunnen maken van de muis. Dit komt soms voor als er plugins worden gebruikt.</p>
+                    <p>Zorg dat met het toetsenbord helemaal over de pagina kan worden genavigeerd.</p>
+            </details>
+
+            <details>
+                <summary>Geef bezoekers de mogelijkheid om sneltoetsen zelf in te stellen of uit te zetten</summary>
+                    <p>Op sommige websites kunnen bezoekers gebruik maken van sneltoetsen. Met sneltoetsen kunnen bezoekers gemakkelijk functies uitvoeren of navigeren naar een pagina. Dit werkt goed voor veel bezoekers die gebruik maken van het toetsenbord maar kunnen conflicteren sommige hulptechnologieën. Hierdoor kunnen sneltoetsen onbedoeld worden geactiveerd. Dit geldt bijvoorbeeld voor bezoekers die gebruik maken van software voor spraakherkenning.</p>
+                    <p>Zorg daarom dat sneltoetsen die bestaan uit één karakter kunnen worden aangepast, uitgeschakeld of alleen geactiveerd kunnen worden als het onderdeel de toetsenbordfocus heeft.</p>
+            </details>
+
+            <details>
+                <summary>Zorg voor een eenvoudige bediening voor acties die door aanraking of gebaren worden geactiveerd</summary>
+                    <p>Sommige functionaliteit op een website is alleen te uit te voeren met een moeilijk gebaar. Bijvoorbeeld gebaren waarbij de bezoeker meerdere vingers moet gebruiken (meerpuntsgebaren) of gebaren waarbij de bezoeker een vinger (of de aanwijzer) in een bepaald pad moet bewegen (pad gebaseerde gebaren). Bezoekers kunnen, om verschillende redenen, soms niet in staat zijn om moeilijke gebaren te maken met hun vingers of met een aanwijzer. Bijvoorbeeld door een motorische beperking.</p>
+                    <p>Zorg dat functionaliteit die met gebaren wordt geactiveerd, ook met een klik, dubbelklik of klikken-en-vasthouden van een muis kan worden geactiveerd. Dit kan bijvoorbeeld met een eenvoudige bediening toe te voegen.</p>
             </details>
             </div>
+            
+            <div class="formulieren">
+                <h3>Formulieren</h3>
+            
+                <details>
+                    <summary>Als een formulierveld verkeerd is ingevuld, benoem dan waar de fout zit en beschrijf wat de fout is</summary>
+                        <p>Bij formulieren hoort een foutcontrole ingebouwd te zijn. De foutcontrole controleert automatisch of een verplicht onderdeel leeg is gelaten of dat een invoerveld verkeerd is ingevuld. Als er een fout is gevonden, dan moet de foutmelding in tekst worden weergegeven. Deze tekst kan worden aangevuld met andere visuele aanwijzingen, zoals een andere kleur of een icoon.</p>
+                        <p>Benoem in de tekst van de foutmelding de naam van het veld dat verkeerd is ingevuld en benoem precies wat de fout is. Schrijf dus niet:</p>
+                        <ul>
+                            <li>Dit veld is verplicht.</li>
+                        </ul>
+                        <p>Maar schrijf:</p>
+                        <ul>
+                            <li>Het veld ‘Telefoonnummer’ mag niet leeg zijn.</li>
+                        </ul>
+                        <p>In de code kan ook worden aangegeven welk veld verkeerd is ingevuld. Gebruik hiervoor het attribuut <code>aria-invalid</code>. Daarnaast hoort de foutmelding in de code aan het bijbehorende invoerveld te worden gekoppeld. Dit voorkomt verwarring bij bezoekers die gebruik maken van hulptechnologieën. Een foutmelding kan op een aantal manieren worden gekoppeld zoals met een <code>aria-describedby</code>-attribuut.</p>
+                        <p>In de code ziet dat er zo uit:</p>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Telefoonnummer:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"&gt;</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">aria-invalid</span><span class="tag">="</span><span class="attr-value">true</span><span class="tag">"</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">"&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">&gt;</span><span class="tag">Het veld ‘Telefoonnummer’ mag niet leeg zijn.</span><span class="tag">&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
+                </details>
+    
+                <details>
+                    <summary>Zorg voor duidelijke labels en instructies bij invoervelden</summary>
+                       <h4>Zorg voor labels bij invoervelden</h4>
+                       <p>Labels zijn het belangrijkste element voor een toegankelijk formulier. Zorg voor labels bij alle invoervelden of ander formulierelementen zoals selectievakjes, keuzerondjes en keuzelijsten. Een duidelijk label beschrijft precies wat er in het veld ingevuld moet worden, is zichtbaar voor alle bezoekers en staat dichtbij het invoerveld.</p>
+                       <p>Het label moet in de code worden gekoppeld aan het invoerveld. Zo maak je het invoerveld ook toegankelijk voor bezoekers die gebruik maken van hulptechnologieën. Het label is de naam van het invoerveld. Een label vergroot ook het klikbare gebied waarmee een invoerveld kan worden geselecteerd. Dit is handig voor bijvoorbeeld bezoekers met een motorische beperking.</p>
+                       <h4>Koppel labels in de code aan een invoerveld</h4>
+                       <p>Labels worden geplaatst met het <code>&lt;label&gt;</code>-element. Het koppelen van een <code>&lt;label&gt;</code>-element aan een formulierelement gebeurt met een <code>for</code>/<code>id</code>-koppeling. Geef hiervoor het <code>&lt;label&gt;</code>-element een <code>for</code>-attribuut en het bijbehorende formulierelement een <code>id</code>-attribuut met dezelfde waarde.</p>
+                       <p>In de code ziet dat er zo uit:</p>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Naam:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld2</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Kies je kleur:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">select id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">0</span><span class="tag">"&gt;Rood&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">1</span><span class="tag">"&gt;Groen&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">2</span><span class="tag">"&gt;blauw&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;/</span><span class="attr-name">select</span><span class="tag">&gt;</span>
+<span id="code"> <span class="tag">&lt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">checkbox</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;</span>
+<span id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;Meld mij aan voor de nieuwsbrief&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span></pre>
+                        <p>Er zijn ook manieren om de labels visueel te verbergen. Vraag je dan wel goed af waarom je dat zou willen doen. Het invoerveld verliest dan het grotere klikbare gebied en het wordt misschien minder duidelijk voor bezoekers. Als het label toch visueel wordt verborgen, zorg er dan er wel voor dat er een label beschikbaar is voor hulptechnologieën. Gebruik hiervoor het attribuut <code>aria-label</code>, <code>aria-labelledby</code> of een <code>title</code>-attribuut. Deze zijn niet zichtbaar.</p>
+                        <p>In de code ziet dat er zo uit:</p>
+<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">aria-label</span><span class="tag">="</span><span class="attr-value">Naam</span><span class="tag">"&gt;</span></pre>
+                        <div class="warning">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                            <p>Let op: Placeholdertekst mag niet als enige manier worden gebruikt om een label toe te voegen aan een invoerveld.</p>
+                        </div>
+
+
+                </details>
+    
+                <details>
+                    <summary>Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten op de pagina</summary>
+                        <p>Als bezoekers met het toetsenbord naar een onderdeel op de pagina kunnen navigeren, maar er niet meer vandaan kunnen dan is dit een toetsenbordval. Om uit een toetsenbordval te raken is de enige manier vaak om de muis (of ander aanwijsapparaat) te gebruiken of om de pagina helemaal te herladen. Dit is dit geen optie voor bezoekers die geen gebruik kunnen maken van de muis. Dit komt soms voor als er plugins worden gebruikt.</p>
+                        <p>Zorg dat met het toetsenbord helemaal over de pagina kan worden genavigeerd.</p>
+                </details>
+    
+                <details>
+                    <summary>Geef bezoekers de mogelijkheid om sneltoetsen zelf in te stellen of uit te zetten</summary>
+                        <p>Op sommige websites kunnen bezoekers gebruik maken van sneltoetsen. Met sneltoetsen kunnen bezoekers gemakkelijk functies uitvoeren of navigeren naar een pagina. Dit werkt goed voor veel bezoekers die gebruik maken van het toetsenbord maar kunnen conflicteren sommige hulptechnologieën. Hierdoor kunnen sneltoetsen onbedoeld worden geactiveerd. Dit geldt bijvoorbeeld voor bezoekers die gebruik maken van software voor spraakherkenning.</p>
+                        <p>Zorg daarom dat sneltoetsen die bestaan uit één karakter kunnen worden aangepast, uitgeschakeld of alleen geactiveerd kunnen worden als het onderdeel de toetsenbordfocus heeft.</p>
+                </details>
+    
+                <details>
+                    <summary>Zorg voor een eenvoudige bediening voor acties die door aanraking of gebaren worden geactiveerd</summary>
+                        <p>Sommige functionaliteit op een website is alleen te uit te voeren met een moeilijk gebaar. Bijvoorbeeld gebaren waarbij de bezoeker meerdere vingers moet gebruiken (meerpuntsgebaren) of gebaren waarbij de bezoeker een vinger (of de aanwijzer) in een bepaald pad moet bewegen (pad gebaseerde gebaren). Bezoekers kunnen, om verschillende redenen, soms niet in staat zijn om moeilijke gebaren te maken met hun vingers of met een aanwijzer. Bijvoorbeeld door een motorische beperking.</p>
+                        <p>Zorg dat functionaliteit die met gebaren wordt geactiveerd, ook met een klik, dubbelklik of klikken-en-vasthouden van een muis kan worden geactiveerd. Dit kan bijvoorbeeld met een eenvoudige bediening toe te voegen.</p>
+                </details>
+                </div>
 
     </body>
 </html>
