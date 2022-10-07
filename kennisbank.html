@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://use.typekit.net/pmz7aza.css">
+        <title>Kennisbank</title>
     </head>
     <body>
     <header>
@@ -34,7 +35,7 @@
             <div class="gradient"></div>
             </div>
 
-            <div class="nav">
+            <nav class="nav">
                 <ul>
                     <li><a class="richtlijnen" href="#">Richtlijnen</a></li>
                     <li><a class="active" href="kennisbank.html">Kennisbank</a></li>
@@ -51,31 +52,31 @@
                     <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
                     <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
                     <p>In de code ziet dat er zo uit:</p>
-                   <pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
+                   <pre class="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">poes.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Witte poes speelt met een rode bal</span><span class="tag">“&gt;</span></pre>
                     <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
             </details>
 
             <details>
                 <summary>Geef complexe afbeeldingen een langere beschrijving</summary>
                     <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de omringende tekst.</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span>
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
-<span id="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span>
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span class="code"> </span></span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
                     <p>Een langere beschrijving mag ook op een aparte pagina worden geplaatst. Plaats dan een link met de verwijzing naar die andere pagina direct voor of na de afbeelding.</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”/langere-beschrijving.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span><span class="tag">“&gt;</span>        
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”/langere-beschrijving.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
                     <p>De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. Dit is geen verplichting maar wel erg handig. Hiervoor kan gebruik worden gemaakt van het <code>aria-describedby</code>-attribuut. Gebruik het <code>ID</code> van het element waar de complexe afbeelding beschreven wordt. Deze informatie hoort dan ook zichtbaar te zijn voor bezoekers die wel kunnen zien.</p>
-<pre id="code"> </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre class="code"> </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">grafiek.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Verkoopcijfers zijn in 2021 met 18% gestegen</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">"&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">Januari: +22%</span><span class="tag">&lt;/</span><span class="attr-name">ul</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">li</span><span class="tag">&gt;</span><span class="tag">...</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
                 </details>
 
                 <details>
@@ -90,9 +91,9 @@
                                 <p>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als link naar een Twitter.com.</p>
                             </div>
                         </div>
-<pre id="code"><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”categorie/spelletjes.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">monopoly.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Ga naar de categorie spelletjes</span><span class="tag">“&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
+<pre class="code"><span class="tag">&lt;</span><span class="attr-name">a href</span><span class="tag">=</span><span class="attr-value">”categorie/spelletjes.html”</span><span class="tag">&gt;Uitgebreide beschrijving van de grafiek met verkoopcijfers &lt;/</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">monopoly.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Ga naar de categorie spelletjes</span><span class="tag">“&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">a</span><span class="tag">&gt;</span></pre>
                         <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
                     </details>
 
@@ -100,13 +101,13 @@
                         <summary>Zorg dat decoratieve afbeeldingen door
                             hulptechnologieën genegeerd kunnen worden</summary>
                             <p>Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te hebben. Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en niet noodzakelijk zijn voor het begrijpen van de tekst. Deze afbeeldingen moeten worden genegeerd door hulptechnologieën. Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">div class</span><span class="tag">="</span><span class="attr-value">line</span><span class="tag">"&gt;</span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">div class</span><span class="tag">="</span><span class="attr-value">line</span><span class="tag">"&gt;</span><span class="tag">&lt;/</span><span class="attr-name">div</span><span class="tag">&gt;</span></pre>
 <br>
-<pre id="code"> <span class="tag">&lt;</span><span class="url">line</span> <span class="tag">{</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="property">background-image</span><span class="tag">:</span> <span class="property">url</span><span class="tag">(</span> <span class="url">"horizontale-lijn.jpg"</span><span class="tag">);</span>
-<span id="code"> </span><span class="tag">}</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="url">line</span> <span class="tag">{</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="property">background-image</span><span class="tag">:</span> <span class="property">url</span><span class="tag">(</span> <span class="url">"horizontale-lijn.jpg"</span><span class="tag">);</span>
+<span class="code"> </span><span class="tag">}</span></pre>
 <br>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">="</span><span class="attr-value">horizontale-lijn.jpg</span> <span class="attr-name">alt</span><span class="tag">=" "</span> <span class="tag">/</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">="</span><span class="attr-value">horizontale-lijn.jpg</span> <span class="attr-name">alt</span><span class="tag">=" "</span> <span class="tag">/</span><span class="tag">&gt;</span></pre>
                      
                             <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
                             <div class="info">
@@ -154,18 +155,18 @@
                                             <h4>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h4>
                                             <p>Bij een <code>&lt;img&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het alt-attribuut.</p>
                                             <p>In de code ziet dat er zo uit:</p>  
-                                            <pre id="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">hond.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Hond speelt met een bal</span><span class="tag">“&gt;</span></pre>
+                                            <pre class="code"> <span class="tag">&lt;</span><span class="attr-name">img src</span><span class="tag">=“</span><span class="attr-value">hond.jpg</span><span class="tag">“</span> <span class="attr-name">alt</span><span class="tag">=“</span><span class="attr-value">Hond speelt met een bal</span><span class="tag">“&gt;</span></pre>
                                             <h4>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h4>
                                             <p>Bij een <code>&lt;svg&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het <code>title</code>-element in de svg. Gebruik ook aria-attribuut <code>role="img"</code> om ervoor te zorgen dat zo veel mogelijk ondersteunende technologieën het <code>&lt;svg&gt;</code>-element herkennen als een afbeelding.</p>
                                             <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">svg role</span><span class="tag">=“</span><span class="attr-value">img</span><span class="tag">“&gt;</span>    
-<span id="code"> </span><span class="tag">   &lt;</span><span class="attr-name">title</span><span class="tag">&gt; Hond speelt met een bal &lt;/</span><span class="attr-name">title</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">   ...</span>
-<span id="code"> </span><span class="tag">&lt;/</span><span class="attr-name">svg</span><span class="tag">&gt;</span></pre>     
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">svg role</span><span class="tag">=“</span><span class="attr-value">img</span><span class="tag">“&gt;</span>    
+<span class="code"> </span><span class="tag">   &lt;</span><span class="attr-name">title</span><span class="tag">&gt; Hond speelt met een bal &lt;/</span><span class="attr-name">title</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">   ...</span>
+<span class="code"> </span><span class="tag">&lt;/</span><span class="attr-name">svg</span><span class="tag">&gt;</span></pre>     
                                             <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
                                             <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een <code>aria-label.</code></p>
                                             <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">=</span><span class="attr-value">"logo"</span> <span class="attr-name">aria-label</span><span class="tag">=</span><span class="attr-value">”Hond speelt met een bal”</span><span class="tag">&gt; &lt;/</span> <span class="attr-name">div</span><span class="tag">"&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">div id</span><span class="tag">=</span><span class="attr-value">"logo"</span> <span class="attr-name">aria-label</span><span class="tag">=</span><span class="attr-value">”Hond speelt met een bal”</span><span class="tag">&gt; &lt;/</span> <span class="attr-name">div</span><span class="tag">"&gt;</span></pre>
                                             <h4>Invulling van het Tekstalternatief</h4>
                                             <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In veel gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op de afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan is het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.</p>
                                 </details>
@@ -229,9 +230,9 @@
                         </ul>
                         <p>In de code kan ook worden aangegeven welk veld verkeerd is ingevuld. Gebruik hiervoor het attribuut <code>aria-invalid</code>. Daarnaast hoort de foutmelding in de code aan het bijbehorende invoerveld te worden gekoppeld. Dit voorkomt verwarring bij bezoekers die gebruik maken van hulptechnologieën. Een foutmelding kan op een aantal manieren worden gekoppeld zoals met een <code>aria-describedby</code>-attribuut.</p>
                         <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Telefoonnummer:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"&gt;</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">aria-invalid</span><span class="tag">="</span><span class="attr-value">true</span><span class="tag">"</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">"&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">&gt;</span><span class="tag">Het veld ‘Telefoonnummer’ mag niet leeg zijn.</span><span class="tag">&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Telefoonnummer:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"&gt;</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">aria-invalid</span><span class="tag">="</span><span class="attr-value">true</span><span class="tag">"</span> <span class="attr-name">aria-describedby</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">"&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">fout</span><span class="tag">&gt;</span><span class="tag">Het veld ‘Telefoonnummer’ mag niet leeg zijn.</span><span class="tag">&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
                 </details>
     
                 <details>
@@ -242,21 +243,21 @@
                        <h5>Koppel labels in de code aan een invoerveld</h5>
                        <p>Labels worden geplaatst met het <code>&lt;label&gt;</code>-element. Het koppelen van een <code>&lt;label&gt;</code>-element aan een formulierelement gebeurt met een <code>for</code>/<code>id</code>-koppeling. Geef hiervoor het <code>&lt;label&gt;</code>-element een <code>for</code>-attribuut en het bijbehorende formulierelement een <code>id</code>-attribuut met dezelfde waarde.</p>
                        <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Naam:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld2</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Kies je kleur:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">select id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">0</span><span class="tag">"&gt;Rood&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">1</span><span class="tag">"&gt;Groen&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">2</span><span class="tag">"&gt;blauw&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;/</span><span class="attr-name">select</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">checkbox</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;Meld mij aan voor de nieuwsbrief&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Naam:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld2</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Kies je kleur:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">select id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">0</span><span class="tag">"&gt;Rood&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">1</span><span class="tag">"&gt;Groen&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">option value</span><span class="tag">="</span><span class="attr-value">2</span><span class="tag">"&gt;blauw&lt;/</span><span class="attr-name">option</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;/</span><span class="attr-name">select</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">checkbox</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;Meld mij aan voor de nieuwsbrief&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span></pre>
                         <p>Er zijn ook manieren om de labels visueel te verbergen. Vraag je dan wel goed af waarom je dat zou willen doen. Het invoerveld verliest dan het grotere klikbare gebied en het wordt misschien minder duidelijk voor bezoekers. Als het label toch visueel wordt verborgen, zorg er dan er wel voor dat er een label beschikbaar is voor hulptechnologieën. Gebruik hiervoor het attribuut <code>aria-label</code>, <code>aria-labelledby</code> of een <code>title</code>-attribuut. Deze zijn niet zichtbaar.</p>
                         <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">aria-label</span><span class="tag">="</span><span class="attr-value">Naam</span><span class="tag">"&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">aria-label</span><span class="tag">="</span><span class="attr-value">Naam</span><span class="tag">"&gt;</span></pre>
                         <div class="warning">
                             <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
                             <p>Let op: Placeholdertekst mag niet als enige manier worden gebruikt om een label toe te voegen aan een invoerveld.</p>
@@ -265,56 +266,56 @@
                         <p>Als een formulier meerdere secties van gerelateerde invoervelden heeft dan wordt een <code>&lt;fieldset&gt;</code>-element gebruikt om deze te groeperen. Geef het <code>&lt;fieldset&gt;</code>-element een label door een <code>&lt;legend&gt;</code>-element in het <code>&lt;fieldset&gt;</code>-element te plaatsen. Hulptechnologieën gebruiken het <code>&lt;legend&gt;</code>-element alsof het een onderdeel is van het label van de elementen in het <code>&lt;fieldset&gt;</code>-element.</p>
                         <p>Het <code>&lt;fieldset&gt;</code>-element is vooral relevant voor het groeperen selectierondjes en keuzevakjes maar kan ook worden gebruikt om andere invoervelden te groeperen.</p>
                         <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">legend</span><span class="tag">&gt;</span><span class="tag">Ben jij al orgaandonor?</span><span class="tag">&lt;/</span><span class="attr-name">legend</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">ja</span><span class="tag">"&gt;Ja, ik ben orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span>   
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">nee</span><span class="tag">"&gt;Nee, ik ben geen orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;/</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">legend</span><span class="tag">&gt;</span><span class="tag">Ben jij al orgaandonor?</span><span class="tag">&lt;/</span><span class="attr-name">legend</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">ja</span><span class="tag">"&gt;Ja, ik ben orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span>   
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">nee</span><span class="tag">"&gt;Nee, ik ben geen orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;/</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span></pre>
                         <h4>Zorg voor instructies bij invoervelden</h4>
                         <p>Instructies geven een extra hint voor de invoer in het invoerveld. De instructies in een formulier moeten aangeven of er verplichte velden zijn en eventueel of er een verplicht invoerformaat is.</p>
                         <h5>Geef aan dat een invoerveld verplicht is</h5>
                         <p>Het aangeven van een verplicht invoerveld kan in tekst of bijvoorbeeld met een asteriks (*). Zorg dat deze aanduiding in het <code>&lt;label&gt;</code>-element is geplaatst.</p>
                         <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: (verplicht)&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: (verplicht)&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span></pre>
                         <p>Als de instructies niet duidelijk per invoerveld worden benoemd dan hoort voorafgaand aan het eerste invoerveld in tekst worden aangegeven op welke manier de verplichte velden zijn aangeduid.</p>
                         <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">Alle velden met een * zijn verplicht.</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;Favoriete dier: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">Alle velden met een * zijn verplicht.</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;Favoriete dier: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span></pre>
                         <p>Markeer verplichte velden ook in de code. Gebruik hiervoor bij voorkeur het <code>aria-required</code>-attribuut.</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">Alle velden met een * zijn verplicht.</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span> <span class="attr-name">aria-required</span><span class="tag">="</span><span class="attr-value">true</span><span class="tag">"&gt;</span>
-<span id="code"> </span>
-<span id="code"> </span><span class="tag">&gt;</span><span class="attr-name">fieldset</span><span class="tag">&lt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">legend</span><span class="tag">&gt;</span><span class="tag">Ben jij al orgaandonor?</span><span class="tag">&lt;/</span><span class="attr-name">legend</span><span class="tag">&gt;</span>
-<span id="code"> </span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">ja</span><span class="tag">"&gt;Ja, ik ben orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span>   
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;</span>
-<span id="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">nee</span><span class="tag">"&gt;Nee, ik ben geen orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;/</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">p</span><span class="tag">&gt;</span><span class="tag">Alle velden met een * zijn verplicht.</span><span class="tag">&lt;/</span><span class="attr-name">p</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">"&gt;Naam: *&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">text</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span> <span class="attr-name">aria-required</span><span class="tag">="</span><span class="attr-value">true</span><span class="tag">"&gt;</span>
+<span class="code"> </span>
+<span class="code"> </span><span class="tag">&gt;</span><span class="attr-name">fieldset</span><span class="tag">&lt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">legend</span><span class="tag">&gt;</span><span class="tag">Ben jij al orgaandonor?</span><span class="tag">&lt;/</span><span class="attr-name">legend</span><span class="tag">&gt;</span>
+<span class="code"> </span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"&gt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld2</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">ja</span><span class="tag">"&gt;Ja, ik ben orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span>   
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">="</span><span class="attr-value">radio</span><span class="tag">"</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"&gt;</span>
+<span class="code">    </span><span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">="</span><span class="attr-value">veld3</span><span class="tag">"</span> <span class="attr-name">value</span><span class="tag">="</span><span class="attr-value">nee</span><span class="tag">"&gt;Nee, ik ben geen orgaandonor&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;/</span><span class="attr-name">fieldset</span><span class="tag">&gt;</span></pre>
                     <h4>Geef het aan als er een verplicht invoerformaat is verplicht is</h4>
                     <p>Ook bij verplichte invoerformaten, zoals een postcode of een e-mailadres die moet worden ingevuld, moeten blijken uit de instructies wat de eisen zijn aan de invoer. Dit kan direct in het <code>&lt;label&gt;</code>-element.</p>
                     <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Geboortedatum (dd-mm-jjjj):&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Geboortedatum (dd-mm-jjjj):&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span><span class="tag">&gt;</span></pre>
                     <p>Maar dit kan ook via het attribuut <code>aria-describedby</code>.</p>
                     <p>In de code ziet dat er zo uit:</p>
-<pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Geboortedatum:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span> <span class="attr-name">aria-describedby</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">“&gt;</span><span class="tag">dd-mm-jjjj&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
+<pre class="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Geboortedatum:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span> <span class="attr-name">aria-describedby</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span>
+<span class="code"> </span><span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">“&gt;</span><span class="tag">dd-mm-jjjj&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
 
 
                 </details>
