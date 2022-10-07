@@ -314,15 +314,21 @@
                     <p>In de code ziet dat er zo uit:</p>
 <pre id="code"> <span class="tag">&lt;</span><span class="attr-name">label for</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span><span class="tag">Geboortedatum:&lt;/</span><span class="attr-name">label</span><span class="tag">&gt;</span>
 <span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">input type</span><span class="tag">=“</span><span class="attr-value">text</span><span class="tag">“</span> <span class="attr-name">id</span><span class="tag">="</span><span class="attr-value">veld1</span> <span class="attr-name">aria-describedby</span><span class="tag">=“</span><span class="attr-value">veld1</span><span class="tag">“</span><span class="tag">&gt;</span>
-<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">span</span><span class="tag">&gt;</span><span class="attr-value">text</span><span class="tag">“</span>
+<span id="code"> </span><span class="tag">&lt;</span><span class="attr-name">span id</span><span class="tag">="</span><span class="attr-value">beschrijving</span><span class="tag">“&gt;</span><span class="tag">dd-mm-jjjj&lt;/</span><span class="attr-name">span</span><span class="tag">&gt;</span></pre>
 
 
                 </details>
     
                 <details>
-                    <summary>Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten op de pagina</summary>
-                        <p>Als bezoekers met het toetsenbord naar een onderdeel op de pagina kunnen navigeren, maar er niet meer vandaan kunnen dan is dit een toetsenbordval. Om uit een toetsenbordval te raken is de enige manier vaak om de muis (of ander aanwijsapparaat) te gebruiken of om de pagina helemaal te herladen. Dit is dit geen optie voor bezoekers die geen gebruik kunnen maken van de muis. Dit komt soms voor als er plugins worden gebruikt.</p>
-                        <p>Zorg dat met het toetsenbord helemaal over de pagina kan worden genavigeerd.</p>
+                    <summary>Maak bezoekers bewust van veranderingen in de inhoud</summary>
+                    <p>Veranderingen in de inhoud van een pagina worden aangegeven met een statusbericht. Een statusbericht voegt nieuwe informatie toe aan de pagina. Het geeft de bezoeker bijvoorbeeld informatie over de resultaten van een actie, over de voortgang van een laadtijd of een waarschuwing over eventuele fouten in een formulier. Deze informatie is belangrijk voor iedereen. Deze informatie moet dus ook beschikbaar worden gemaakt voor een bezoeker die gebruik maakt van hulptechnologieën.</p>
+                    <p>Hulptechnologie synchroniseert continu met het DOM en merkt de wijziging dus wel op, maar de bezoeker die hiervan gebruik maakt wordt er nietover geïnformeerd. Met het attribuut aria-live wordt een blok een <em>live region</em>. Deze informatie moeten in de code worden opgemaakt zodat ze de aandacht krijgen van hulptechnologieën op een manier die de bezoeker niet onnodig onderbreekt.</p>
+                    <ul>
+                        <li>Bij succes of informatie over voortgang wordt dit gedaan met ARIA <code>role="status"</code> of <code>aria-live="polite"</code>.</li>
+                        <li>Bij waarschuwing wordt dit gedaan met ARIA <code>role="alert"</code> of <code>aria-live="assertive"</code>.</li>
+                    </ul>
+
+
                 </details>
     
                 <details>
