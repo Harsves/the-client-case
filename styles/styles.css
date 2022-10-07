@@ -159,7 +159,7 @@ details > p {
     max-width: 30rem;
 }
 
-#code {
+.code {
     background-color: #F5F8F9;
     border-radius: 10px;
     font-size: 1rem;
@@ -170,6 +170,12 @@ details > p {
     
 }
 
+.code::before {
+    counter-increment: counter;
+    content: counter(counter) " " ;
+    border-right: 1px solid black;
+}
+
 pre {
     overflow: scroll;
     padding: 10px;
@@ -178,11 +184,7 @@ pre {
     margin-right: 10px;
 }
 
-#code::before {
-    counter-increment: counter;
-    content: counter(counter) " " ;
-    border-right: 1px solid black;
-  }
+
 
 code {
     font-size: 1rem;
