@@ -101,26 +101,30 @@ a {
     padding: 30px;
 }
 
-/* List */
-
-.afbeeldingen {
-    margin: 20px;
-    padding-bottom: 20px;
+.responsive {
+    display: none;
 }
 
-.afbeeldingen h3 {
-    font-size: 1.25rem;
+h1 {
+    font-size: 2rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
     text-decoration: none;
     color: #B9005F;
     margin-bottom: 10px;
+    margin-left: 20px;
+    grid-area: kennisbank;
 }
+
+
+
+/* details */
 
 details {
     margin-bottom: 15px;
     box-shadow: 0px 0px 8px #00000022;
     border-radius: 20px;
+    max-width: 50rem;
 }
 
 details [open] {
@@ -173,7 +177,7 @@ code:not([class*=language-]) {
     border-radius: 3px;
 }
 
-h4 {
+h3 {
     font-size: 1.5rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -185,7 +189,7 @@ h4 {
     max-width: 30rem;
 }
 
-h5 {
+h4 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -197,12 +201,28 @@ h5 {
     max-width: 30rem;
 }
 
+.afbeeldingen {
+    margin: 20px;
+    padding-bottom: 20px;
+    grid-area: afbeeldingen;
+}
+
+.afbeeldingen h2 {
+    font-size: 1.25rem;
+    font-family: fira-sans, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #B9005F;
+    margin-bottom: 10px;
+}
+
 .bediening {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: bediening;
 }
 
-.bediening h3 {
+.bediening h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -214,9 +234,10 @@ h5 {
 .formulieren {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: formulieren;
 }
 
-.formulieren h3 {
+.formulieren h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -228,9 +249,10 @@ h5 {
 .media {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: media;
 }
 
-.media h3 {
+.media h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -242,9 +264,10 @@ h5 {
 .navigatie {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: navigatie;
 }
 
-.navigatie h3 {
+.navigatie h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -256,9 +279,10 @@ h5 {
 .ontwerp {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: ontwerp;
 }
 
-.ontwerp h3 {
+.ontwerp h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -270,9 +294,10 @@ h5 {
 .teksten {
     margin: 20px;
     padding-bottom: 20px;
+    grid-area: teksten;
 }
 
-.teksten h3 {
+.teksten h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -300,7 +325,7 @@ h5 {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
-    max-width: 30rem;
+    max-width: 15rem;
 }
 
 .info  a {
@@ -323,6 +348,12 @@ h5 {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
+}
+
+.info > svg {
+    padding-left: 10px;
+    width: 50px;
+    fill: #0b6ba2;
 }
 
 details > ul {
@@ -370,11 +401,78 @@ details > ol {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
+    max-width: 15rem;
 }
 
 .warning > svg {
     padding-left: 10px;
-    width: 200px;
+    width: 50px;
     fill: #c96d18;
 }
 
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    details > summary {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3.125rem;
+        margin-bottom: 50px;
+    }
+
+    .afbeeldingen h2 {
+        font-size: 2.25rem;
+    }
+
+    .bediening h2 {
+        font-size: 2.25rem;
+    }
+
+    .formulieren h2 {
+        font-size: 2.25rem;
+    }
+
+    .media h2 {
+        font-size: 2.25rem;
+    }
+
+    .navigatie h2 {
+        font-size: 2.25rem;
+    }
+
+    .ontwerp h2 {
+        font-size: 2.25rem;
+    }
+
+    .teksten h2 {
+        font-size: 2.25rem;
+    }
+
+    /* Wrapper */ 
+    .wrapper {
+        padding-left: calc(1vw + 20px);
+    }
+
+    .responsive {
+        display: unset;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+        padding: 30px;
+        font-size: 1.25rem;
+    }
+
+    .active {
+        font-size: 1.25rem;
+    }
+
+    .kennisbank {
+        font-size: 1.25rem;
+    }
+
+    .richtlijnen {
+        font-size: 1.25rem;
+    }
+}
