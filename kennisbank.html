@@ -20,13 +20,13 @@
                 <img src="assets/Logo.png" alt="Logo Vervoerregio Amsterdam">
             </a>
         </div>
-            <nav>
+            <!-- <nav>
                 <svg viewBox="0 0 100 80" width="40" height="40">
                     <rect width="100" height="20"></rect>
                     <rect y="30" width="100" height="20"></rect>
                     <rect y="60" width="100" height="20"></rect>
                 </svg>
-            </nav>
+            </nav> -->
        
 
     </header>
@@ -41,11 +41,15 @@
                 <ul>
                     <li><a class="richtlijnen" href="#">Richtlijnen</a></li>
                     <li><a class="active" href="kennisbank.html">Kennisbank</a></li>
+                    <li><a class="responsive" href="#">Contact</a></li.
                 </ul>
             </nav>
 
+            <div class="wrapper">
+            <h1>Kennisbank</h1>
+
         <div class="afbeeldingen">
-            <h3>Afbeeldingen</h3>
+            <h2>Afbeeldingen</h2>
         
             <details>
                 <summary>Geef afbeelding die informatie
@@ -83,10 +87,8 @@
                         <p>Als er ook tekst staat op een functionele afbeelding, dan moeten de tekst op de afbeelding én het doel van de link allebei in het tekstalternatief worden vermeld. Hierdoor kunnen bezoekers die met spraakherkenning werken de link ook makkelijk bereiken.</p>
                         <div class="info">
                             <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                            <div class="info-discription">
                                 <p>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als link naar een Twitter.com.</p>
                             </div>
-                        </div>
 <script type="text/plain" class="language-html"><a href=”categorie/spelletjes.html”>
 <img src="monopoly.jpg" alt="Ga naar de categorie spelletjes" />
 </a></script>
@@ -108,10 +110,8 @@
                             <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
                             <div class="info">
                                 <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                                <div class="info-discription">
                                     <p>Let op: Dit kan in bepaalde gevallen ook worden gedaan met ARIA <code>role="sentation"</code> of <code>aria-hidden="true"</code>.</p>
                                 </div>
-                            </div>
                         </details>
 
                         <details>
@@ -120,15 +120,13 @@
                                 <p>Gebruik daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan goed worden vormgegeven met CSS. Hiermee kan bijvoorbeeld de kleur, het lettertype, de lettergrootte, de regelhoogte en de letterafstand en worden ingesteld. Eventueel kan tekst met CSS ook bovenop een afbeelding worden geplaatst.</p>
                                 <div class="info">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/></svg>
-                                    <div class="info-discription">
-                                        <p>Er zijn een paar uitzonderingen waarbij een afbeelding van tekst wél mag worden gebruikt:</p>
+                                                <p>Er zijn een paar uitzonderingen waarbij een afbeelding van tekst wél mag worden gebruikt:</p>
                                             <ol>
                                             <li>Met HTML en CSS kan niet dezelfde visuele weergave worden bereikt.</li>
                                             <li>De weergave van de tekst in de afbeelding is essentieel voor de informatie die wordt overgebracht.</li>
                                             <li>De afbeelding van tekst kan worden aangepast naar de voorkeuren van de bezoeker.</li>
                                             </ol>
                                         </div>
-                                </div>
                             </details>
 
                             <details>
@@ -148,22 +146,22 @@
                                         <summary>Zorg dat afbeeldingen in de code een 
                                             tekstalternatief kunnen krijgen</summary>
                                             <p>Alle afbeeldingen moeten een tekstalternatief hebben. Een tekstalternatief kan op verschillende manieren worden toegevoegd:</p>
-                                            <h4>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h4>
+                                            <h3>Tekstalternatief voor een <code>&lt;img&gt;</code>-element</h3>
                                             <p>Bij een <code>&lt;img&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het alt-attribuut.</p>
                                             <p>In de code ziet dat er zo uit:</p>  
 <script type="text/plain" class="language-html"><img src="hond.jpg" alt="Hond speelt met een bal"></script>
-                                            <h4>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h4>
+                                            <h3>Tekstalternatief voor een <code>&lt;svg&gt;</code>-element</h3>
                                             <p>Bij een <code>&lt;svg&gt;</code>-element wordt een tekstalternatief gegeven met behulp van het <code>title</code>-element in de svg. Gebruik ook aria-attribuut <code>role="img"</code> om ervoor te zorgen dat zo veel mogelijk ondersteunende technologieën het <code>&lt;svg&gt;</code>-element herkennen als een afbeelding.</p>
                                             <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><svg role="img">
     <title>Hond speelt met een bal</title>
     ...
   </svg></script>
-                                            <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
+                                            <h3>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h3>
                                             <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een <code>aria-label.</code></p>
                                             <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><div id=”logo” aria-label=”Hond speelt met een bal”></div></script>
-                                            <h4>Invulling van het Tekstalternatief</h4>
+                                            <h3>Invulling van het Tekstalternatief</h3>
                                             <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In veel gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op de afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan is het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door hulptechnologieën.</p>
                                             
 
@@ -172,7 +170,7 @@
         </div>
 
         <div class="bediening">
-            <h3>Bediening</h3>
+            <h2>Bediening</h2>
         
             <details>
                 <summary>Gebruik niet alleen apparaatbewegingen voor het uitvoeren van een actie</summary>
@@ -213,7 +211,7 @@
             </div>
             
             <div class="formulieren">
-                <h3>Formulieren</h3>
+                <h2>Formulieren</h2>
             
                 <details>
                     <summary>Als een formulierveld verkeerd is ingevuld, benoem dan waar de fout zit en beschrijf wat de fout is</summary>
@@ -235,10 +233,10 @@
     
                 <details>
                     <summary>Zorg voor duidelijke labels en instructies bij invoervelden</summary>
-                       <h4>Zorg voor labels bij invoervelden</h4>
+                       <h3>Zorg voor labels bij invoervelden</h3>
                        <p>Labels zijn het belangrijkste element voor een toegankelijk formulier. Zorg voor labels bij alle invoervelden of ander formulierelementen zoals selectievakjes, keuzerondjes en keuzelijsten. Een duidelijk label beschrijft cies wat er in het veld ingevuld moet worden, is zichtbaar voor alle bezoekers en staat dichtbij het invoerveld.</p>
                        <p>Het label moet in de code worden gekoppeld aan het invoerveld. Zo maak je het invoerveld ook toegankelijk voor bezoekers die gebruik maken van hulptechnologieën. Het label is de naam van het invoerveld. Een label vergroot ook het klikbare gebied waarmee een invoerveld kan worden geselecteerd. Dit is handig voor bijvoorbeeld bezoekers met een motorische beperking.</p>
-                       <h5>Koppel labels in de code aan een invoerveld</h5>
+                       <h4>Koppel labels in de code aan een invoerveld</h4>
                        <p>Labels worden geplaatst met het <code>&lt;label&gt;</code>-element. Het koppelen van een <code>&lt;label&gt;</code>-element aan een formulierelement gebeurt met een <code>for</code>/<code>id</code>-koppeling. Geef hiervoor het <code>&lt;label&gt;</code>-element een <code>for</code>-attribuut en het bijbehorende formulierelement een <code>id</code>-attribuut met dezelfde waarde.</p>
                        <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><label for="veld1">Naam:</label>
@@ -260,7 +258,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
                             <p>Let op: Placeholdertekst mag niet als enige manier worden gebruikt om een label toe te voegen aan een invoerveld.</p>
                         </div>
-                        <h5>Groepeer meerdere secties van gerelateerde invoervelden</h5>
+                        <h4>Groepeer meerdere secties van gerelateerde invoervelden</h4>
                         <p>Als een formulier meerdere secties van gerelateerde invoervelden heeft dan wordt een <code>&lt;fieldset&gt;</code>-element gebruikt om deze te groeperen. Geef het <code>&lt;fieldset&gt;</code>-element een label door een <code>&lt;legend&gt;</code>-element in het <code>&lt;fieldset&gt;</code>-element te plaatsen. Hulptechnologieën gebruiken het <code>&lt;legend&gt;</code>-element alsof het een onderdeel is van het label van de elementen in het <code>&lt;fieldset&gt;</code>-element.</p>
                         <p>Het <code>&lt;fieldset&gt;</code>-element is vooral relevant voor het groeperen selectierondjes en keuzevakjes maar kan ook worden gebruikt om andere invoervelden te groeperen.</p>
                         <p>In de code ziet dat er zo uit:</p>
@@ -273,9 +271,9 @@
     <input type="radio" id="veld2">
     <label for="veld2" value="nee">Nee, ik ben geen orgaandonor</label>
 </fieldset></script>
-                        <h4>Zorg voor instructies bij invoervelden</h4>
+                        <h3>Zorg voor instructies bij invoervelden</h3>
                         <p>Instructies geven een extra hint voor de invoer in het invoerveld. De instructies in een formulier moeten aangeven of er verplichte velden zijn en eventueel of er een verplicht invoerformaat is.</p>
-                        <h5>Geef aan dat een invoerveld verplicht is</h5>
+                        <h4>Geef aan dat een invoerveld verplicht is</h4>
                         <p>Het aangeven van een verplicht invoerveld kan in tekst of bijvoorbeeld met een asteriks (*). Zorg dat deze aanduiding in het <code>&lt;label&gt;</code>-element is geplaatst.</p>
                         <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><label for="veld1">Naam: (verplicht)</label>
@@ -304,7 +302,7 @@
     <input type="radio" id="veld3" value="nee" aria-required="true">
     <label for="veld3">Nee, ik ben geen orgaandonor</label>
 </fieldset></script>
-                    <h4>Geef het aan als er een verplicht invoerformaat is verplicht is</h4>
+                    <h3>Geef het aan als er een verplicht invoerformaat is verplicht is</h3>
                     <p>Ook bij verplichte invoerformaten, zoals een postcode of een e-mailadres die moet worden ingevuld, moeten blijken uit de instructies wat de eisen zijn aan de invoer. Dit kan direct in het <code>&lt;label&gt;</code>-element.</p>
                     <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><label for="veld1">Geboortedatum (dd-mm-jjjj):</label>
@@ -400,15 +398,13 @@
 <input type="text" id="veld2" autocomplete="bday"></script>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>Het W3C heeft een lijst met 53 doelen van invoer die in de code horen vastgelegd te worden. (<a href="https://www.w3.org/TR/WCAG21/#input-purposes">https://www.w3.org/TR/WCAG21/#input-purposes</a>).</p>
                         </div>
-                    </div>
                 </details>
             </div>
 
             <div class="media">
-                <h3>Media</h3>
+                <h2>Media</h2>
 
                 <details>
                     <summary>Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden uitgezet</summary>
@@ -427,16 +423,14 @@
                     <p>Geluid dat toch automatisch begint te spelen, moet eenvoudig kunnen worden gepauzeerd, gestopt of zachter worden gezet. Zorg dan voor een pauze- of stopknop en een volumeregelaar bij het geluid. Voorzie eventueel ook een skiplink zodat deze bediening gemakkelijk te bereiken is.</p>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>Op de grote videoplatformen kan autoplay worden in- en uitgeschakeld, zet dit bij voorkeur uit.</p>
                         </div>
-                    </div>
                 </details>
 
             </div>
 
             <div class="navigatie">
-                <h3>Navigatie</h3>
+                <h2>Navigatie</h2>
 
                 <details>
                     <summary>Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden uitgezet</summary>
@@ -446,7 +440,7 @@
                         <li>Voeg skiplinks toe.</li>
                         <li>Groepeer onderdelen in de code.</li>
                     </ol>
-                    <h4>Voeg skiplinks toe</h4>
+                    <h3>Voeg skiplinks toe</h3>
                     <p>Een skiplink is een ankerlink die verwijst naar een onderdeel lager op de pagina. Hiermee geef je bezoekers de mogelijkheid om sneller bij een pagina-onderdeel te komen. Skiplinks zijn doorgaans niet gelijk zichtbaar, maar worden ze pas zichtbaar als er met het toetsenbord door de pagina wordt genavigeerd.</p>
                     <p>In de code ziet dat er zo uit:</p>
 <script type="text/plain" class="language-html"><html>
@@ -466,7 +460,7 @@
 </html></script>
                     <p>
                         Skiplinks horen het eerste element op een pagina te zijn. Zet ze dus bovenaan in de code en gebruik ze op iedere pagina waarop herhalende blokken staan.</p>
-                        <h4>Groepeer onderdelen in de code</h4>
+                        <h3>Groepeer onderdelen in de code</h3>
                         <p>Herhalende blokken overslaan kan ook door deze onderdelen te groeperen in de code. Hiervoor bestaan meerdere technieken. Door deze onderdelen te groeperen kunnen bezoekers die gebruik maken van hulptechnologieën gemakkelijk over de pagina navigeren. Deze bezoekers kunnen bijvoorbeeld een lijst van alle koppen gebruiken of direct naar een oriëntatiepunt navigeren.</p>
                         <ul>
                             <li>Gebruik een kop-element aan het begin van alle blokken op een pagina.</li>
@@ -504,10 +498,8 @@
                     </ul>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>Tip: Als je verwijst naar een e-mailadres, gebruik dan het volledige e-mailadres als linktekst.</p>
                         </div>
-                    </div>
                         <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links gebruiken om over de pagina te navigeren.</p>
                         <p>Als het echt niet anders kan, dan mag ook nog de context van de link worden gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin, paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden uitgebreid met het <code>aria-label</code>-attribuut of met het <code>title</code>-attribuut.</p>
                         <p>In de code ziet dat er zo uit:</p>
@@ -568,7 +560,7 @@
             </div>
 
                 <div class="ontwerp">
-                    <h3>Ontwerp</h3>
+                    <h2>Ontwerp</h2>
                     <details>
                         <summary>Plaats pagina-onderdelen op iedere pagina in een vaste volgorde</summary>
                         <p>Navigatiemenu’s en onderdelen die op meerdere webpagina’s voorkomen, moeten telkens in dezelfde volgorde worden geplaatst. Zorg dat deze volgorde zowel in de vormgeving als in de code hetzelfde is.</p>
@@ -587,15 +579,13 @@
                     <p>Door onderdelen op een consistente manier te benoemen kunnen bezoekers die gebruik maken van schermlezers sneller en efficiënter hun weg vinden.</p>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>Voorbeeld: De tekst op de knop bij een zoekveld is op alle pagina’s ‘zoeken’, en niet op sommige pagina’s ‘vinden’.</p>
                         </div>
-                    </div>
                 </details>
             </div>
 
             <div class="teksten">
-                <h3>Teksten</h3>
+                <h2>Teksten</h2>
 
                <details>
                     <summary>Geef links een linktekst die het doel van de link beschrijft</summary>
@@ -612,9 +602,7 @@
                     </ul>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>Tip: Als je verwijst naar een e-mailadres, gebruik dan het volledige e-mailadres als linktekst.</p>
-                        </div>
                     </div>
                         <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links gebruiken om over de pagina te navigeren.</p>
                         <p>Als het echt niet anders kan, dan mag ook nog de context van de link worden gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin, paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden uitgebreid met het <code>aria-label</code>-attribuut of met het <code>title</code>-attribuut.</p>
@@ -664,9 +652,7 @@
 </html></script>
                     <div class="info">
                         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-                        <div class="info-discription">
                             <p>In een CMS kan de paginatitel vaak per pagina van de website worden ingesteld.</p>
-                        </div>
                     </div>
                 </details>
 
@@ -683,7 +669,6 @@
     
     <div class="info">
         <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
-        <div class="info-discription">
             <p>In een CMS kan de taal van een website worden aangegeven in de instellingen.</p>
         </div>
                 </details>
@@ -704,6 +689,7 @@
                         <p>Let op: Niet alle CMS hebben hier ondersteuning voor.</p>
                     </div>
                 </details>
+            </div>
 
 
 
