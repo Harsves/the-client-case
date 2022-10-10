@@ -38,17 +38,41 @@ header {
 }
 
 .menu {
-    background-image: url("../assets/hero.jpg");
+    /* background-image: url("../assets/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
+    background-size: cover; */
+    width: 100vw;
     height: 200px;
-    clip-path: path(" M 0, 30 L 240, 30 Q 245, 30 245, 25 L 245, 5 Q 245, 0 250, 0 L 390, 0 390, 200 0, 200");
+    position: relative;
+}
+
+figure {
+    /* clip-path: path(" M 0, 30 L 240, 30 Q 245, 30 245, 25 L 245, 5 Q 245, 0 250, 0 L 390, 0 390, 200 0, 200"); */
+    width: 100%;
+    height:100%;
+}
+
+img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    clip-path: url(#mask1);
+  -webkit-clip-path: url(#mask1);
+}
+
+.box {
+    background: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 15%;
+    border-bottom-right-radius: 10px;
 }
 
 .gradient {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     top: 170px;
