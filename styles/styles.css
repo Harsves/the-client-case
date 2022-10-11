@@ -47,12 +47,6 @@ header {
     position: relative;
 }
 
-figure {
-    /* clip-path: path(" M 0, 30 L 240, 30 Q 245, 30 245, 25 L 245, 5 Q 245, 0 250, 0 L 390, 0 390, 200 0, 200"); */
-    width: 100%;
-    height:100%;
-}
-
 img {
     object-fit: cover;
     width: inherit;
@@ -98,7 +92,7 @@ ul {
     padding: 0px;
 }
 
-a {
+li > a {
     font-size: 1rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
@@ -231,28 +225,10 @@ h4 {
     grid-area: afbeeldingen;
 }
 
-.afbeeldingen h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
-}
-
 .bediening {
     margin: 20px;
     padding-bottom: 20px;
     grid-area: bediening;
-}
-
-.bediening h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
 }
 
 .formulieren {
@@ -261,28 +237,10 @@ h4 {
     grid-area: formulieren;
 }
 
-.formulieren h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
-}
-
 .media {
     margin: 20px;
     padding-bottom: 20px;
     grid-area: media;
-}
-
-.media h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
 }
 
 .navigatie {
@@ -291,28 +249,10 @@ h4 {
     grid-area: navigatie;
 }
 
-.navigatie h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
-}
-
 .ontwerp {
     margin: 20px;
     padding-bottom: 20px;
     grid-area: ontwerp;
-}
-
-.ontwerp h2 {
-    font-size: 1.25rem;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    color: #B9005F;
-    margin-bottom: 10px;
 }
 
 .teksten {
@@ -321,13 +261,14 @@ h4 {
     grid-area: teksten;
 }
 
-.teksten h2 {
+h2 {
     font-size: 1.25rem;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
     text-decoration: none;
     color: #B9005F;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 /* Info */
@@ -380,7 +321,7 @@ h4 {
     fill: #0b6ba2;
 }
 
-details > ul {
+.wrapper > ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -393,7 +334,7 @@ details > ul {
     margin-left: 20px;
 }
 
-details > ol {
+.wrapper > ol {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -434,10 +375,21 @@ details > ol {
     fill: #c96d18;
 }
 
+p {
+    font-size: 1rem;
+    font-family: fira-sans-2, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px;
+    max-width: 30rem;
+}
+
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1224px) {
+and (min-width : 750px) {
+
     details > summary {
         font-size: 1.25rem;
     }
@@ -447,37 +399,20 @@ and (min-width : 1224px) {
         margin-bottom: 50px;
     }
 
-    .afbeeldingen h2 {
+    h2 {
         font-size: 2.25rem;
     }
 
-    .bediening h2 {
-        font-size: 2.25rem;
-    }
-
-    .formulieren h2 {
-        font-size: 2.25rem;
-    }
-
-    .media h2 {
-        font-size: 2.25rem;
-    }
-
-    .navigatie h2 {
-        font-size: 2.25rem;
-    }
-
-    .ontwerp h2 {
-        font-size: 2.25rem;
-    }
-
-    .teksten h2 {
-        font-size: 2.25rem;
+    p {
+        font-size: 18px;
+        max-width: 40rem;
     }
 
     /* Wrapper */ 
+    
     .wrapper {
-        padding-left: calc(1vw + 20px);
+        padding-left: 20vw;
+        padding-right: 30vw;
     }
 
     .responsive {
