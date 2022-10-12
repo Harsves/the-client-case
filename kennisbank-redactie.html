@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Suus Harsveld">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="connect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://use.typekit.net/pmz7aza.css">
+        <link rel="stylesheet" href="prism.css">
+        <script src="script.js"></script>
+        <script src="prism.js"></script>
+        <title>Kennisbank redactie</title>
+        <link rel="shortcut icon" href="assets/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
+    </head>
+    <body class="line-numbers">
+    <header>
+
+        <div class="site-identity">
+            <a href="index.html"> 
+                <img src="assets/Logo.png" alt="Logo Vervoerregio Amsterdam">
+            </a>
+        </div>
+        <nav class="site-nav">
+                <button onclick="myFunction()" class="dropdown-nav">Menu</button>
+        </nav>
+
+        <div id="dropdown" class="dropdown-content">
+            <a href="kennisbank-redactie.html">Kennisbank redactie</a>
+            <a href="kennisbank-techniek.html">Kennisbank techniek</a>
+            <!-- <a href="die-ene.html">Die ene</a>
+            <a href="codesnuivers.html">Codesnuivers</a>
+            <a href="docenten.html">Docenten</a> -->
+        </div>
+    </header>
+
+        <div class="menu">
+                
+            <svg viewbox="1 -1 100 10" width="0" height="0">
+                <defs>
+                    <clipPath id="mask1" clipPathUnits="objectBoundingBox">
+                        <path
+                              transform="scale(0.00135, 0.00254)"
+                              d="M 0, 50 L 235, 50 Q 245, 50 245, 25 L 245, 30 Q 245, 0 255, 0 L 1000, 0 737, 350 0, 350">
+                        </path>
+                    </clipPath>
+                </defs>
+            </svg>
+                <img src="./assets/hero.jpg" alt="">
+            <div class="gradient"></div>
+            </div>
+
+            <nav class="subnav">
+                <ul>
+                    <li><a class="richtlijnen" href="richtlijnen.html">Richtlijnen</a></li>
+                    <li><a class="active" href="kennisbank.html">Kennisbank</a></li>
+                    <li><a class="responsive" href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="breadcrumbs">
+                <ul class="crumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kennisbank.html">Kennisbank</a></li>
+                    <li>Kennisbank redactie</li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+            <h1>Kennisbank</h1>
+
+        <div class="afbeeldingen">
+            <h2>Afbeeldingen</h2>
+            
+            <details>
+                <summary>Geef afbeeldingen die informatie overdragen een beschrijvend tekstalternatief</summary>
+                <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De invulling is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.</p>
+                <p>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.</p>
+                <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><img src="poes.jpg" alt="Witte poes speelt met een rode bal"></script>
+                <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een tekstalternatief altijd nuttig en beknopt.</p>
+            </details>
+
+            <details>
+                <summary>Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de link beschrijft</summary>
+                <p>In de gevallen dat niet tekst maar alleen een afbeelding als link wordt gebruikt, spreken we over functionele afbeeldingen. Dit kunnen afbeeldingen zijn die verwijzen naar een andere pagina of website, maar ook afbeeldingen die een actie op de pagina uitvoeren.</p>
+                <p>Deze afbeeldingen moeten een tekstalternatief hebben dat het doel van de link beschrijft, of die beschrijft wat er gebeurd als op de afbeelding wordt geklikt. Voorleessoftware gebruikt het tekstalternatief namelijk als linktekst. Daarom is het belangrijker om het doel van de link te beschrijven, in plaats van wat er op de afbeelding te zien is.</p>
+                <p>Als er ook tekst staat op een functionele afbeelding, dan moeten de tekst op de afbeelding én het doel van de link allebei in het tekstalternatief worden vermeld. Hierdoor kunnen bezoekers die met spraakherkenning werken de link ook makkelijk bereiken.</p>
+                <div class="info">
+                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                        <p>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als link naar een Twitter.com.</p>
+                    </div>
+<script type="text/plain" class="language-html"><a href=”categorie/spelletjes.html”>
+    <img src="monopoly.jpg" alt="Ga naar de categorie spelletjes" />
+</a></script>
+            </details>
+
+            <details>
+                <summary>Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen worden</summary>
+                <p>Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te hebben. Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en niet noodzakelijk zijn voor het begrijpen van de tekst. Deze afbeeldingen moeten worden genegeerd door hulptechnologieën. Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.</p>
+<script type="text/plain" class="language-html"><div class="line"></div></script>
+
+<script type="text/plain" class="language-css">.line {
+    background-image: url("horizontale-lijn.jpg");
+}</script>
+                <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
+            </details>
+          
+            </div>
+            </div>
+    </body>
+</html>
