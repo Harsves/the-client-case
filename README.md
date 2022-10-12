@@ -1,5 +1,7 @@
 # Vervoerregio Amsterdam
 
+<img width="1679" alt="Schermafbeelding 2022-10-12 om 11 07 20" src="https://user-images.githubusercontent.com/112931845/195300707-bb9ad8f8-60ab-4a4c-95d8-caeeb4dbd9ee.png">
+
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
@@ -10,7 +12,6 @@
 ## Beschrijving
 De website is een informatie bron overe de WCAG regelgeving, in de huisstyle van vervoerregio Amsterdam
 https://harsves.github.io/the-client-case/
-<img width="1679" alt="Schermafbeelding 2022-10-12 om 11 07 20" src="https://user-images.githubusercontent.com/112931845/195300707-bb9ad8f8-60ab-4a4c-95d8-caeeb4dbd9ee.png">
 
 ## Kenmerken
 **Gebruikte tools**
