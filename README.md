@@ -15,15 +15,15 @@ https://harsves.github.io/the-client-case/
 
 ## Kenmerken
 **Gebruikte tools**
-Pen en papier
-Adobe XD
-VS Code
+  * Pen en papier
+  * Adobe XD
+  * VS Code
 
 **Gebruikte techniek**
-HTML
-CSS
-JavaScript
-Prism (https://prismjs.com/)
+  * HTML
+  * CSS
+  * JavaScript
+  * Prism (https://prismjs.com/)
 
 ## Bronnen
 https://wcag.nl/
