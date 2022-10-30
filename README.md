@@ -25,6 +25,10 @@ https://harsves.github.io/the-client-case/
   * JavaScript
   * Prism (https://prismjs.com/)
 
+## User journey
+- Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken
+- Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid
+
 ## Bronnen
 https://wcag.nl/
 
