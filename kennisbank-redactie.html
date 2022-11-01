@@ -106,6 +106,29 @@
 }</script>
                 <p>Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het <code>alt</code>-attribuut in het <code>&lt;img&gt;</code>-element worden leeg gelaten. Het <code>alt</code>-attribuut moet wel aanwezig zijn maar het heeft dan geen tekst.</p>
             </details>
+
+            <details>
+                <summary>Geef complexe afbeeldingen een langere beschrijving</summary>
+                <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief. Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval naast een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de omringende tekst.</p>
+<script type="text/plain" class="language-html"><img src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen">
+    <div>
+      <p>De groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:</p>
+        <ul>
+            <li>Januari: +22%</li>
+            <li>...
+    </div></script>
+        <p>Een langere beschrijving mag ook op een aparte pagina worden geplaatst. Plaats dan een link met de verwijzing naar die andere pagina direct voor of na de afbeelding.</p>
+<script type="text/plain" class="language-html"><img src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen">
+<a href=”/langere-beschrijving.html”>Uitgebreide beschrijving van de grafiek met verkoopcijfers</a></script>    
+            <p>De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. Dit is geen verplichting maar wel erg handig. Hiervoor kan gebruik worden gemaakt van het <code>aria-describedby</code>-attribuut. Gebruik het <code>ID</code> van het element waar de complexe afbeelding beschreven wordt. Deze informatie hoort dan ook zichtbaar te zijn voor bezoekers die wel kunnen zien.</p>
+<script type="text/plain" class="language-html"><img src="grafiek.jpg" alt="Verkoopcijfers zijn in 2020 met 18% gestegen" aria-describedby="beschrijving">
+    <div id="beschrijving">
+      <p>De groei van maandelijkse verkopen in 2020 tegen 2019 verliep als volgt:</p>
+        <ul>
+            <li>Januari: +22%</li>
+            <li>...
+    </div></script>
+        </details>
           
             </div>
             </div>
