@@ -15,41 +15,48 @@
         <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
     </head>
     <body class="line-numbers">
-    <header>
+        <header>
 
-        <div class="site-identity">
-            <a href="index.html"> 
-                <img src="assets/Logo.png" alt="Logo Vervoerregio Amsterdam">
-            </a>
-        </div>
-        <nav class="site-nav">
-                <button onclick="myFunction()" class="dropdown-nav">Menu</button>
-        </nav>
+            <div class="site-identity">
+                <a href="index.html"> 
+                    <img src="assets/Logo.png" alt="Logo Vervoerregio Amsterdam">
+                </a>
+            </div>
+            <nav class="site-nav">
+                 <button onclick="myFunction()" class="dropdown-nav">Menu</button>
+            </nav>
+    
+            <div id="dropdown" class="dropdown-content">
+                <a href="kennisbank-redactie.html">Kennisbank redactie</a>
+                <a href="kennisbank-techniek.html">Kennisbank techniek</a>
+                <!-- <a href="die-ene.html">Die ene</a>
+                <a href="codesnuivers.html">Codesnuivers</a>
+                <a href="docenten.html">Docenten</a> -->
+            </div>
+        </header>
 
-        <div id="dropdown" class="dropdown-content">
-            <a href="kennisbank-redactie.html">Kennisbank redactie</a>
-            <a href="kennisbank-techniek.html">Kennisbank techniek</a>
-            <!-- <a href="die-ene.html">Die ene</a>
-            <a href="codesnuivers.html">Codesnuivers</a>
-            <a href="docenten.html">Docenten</a> -->
-        </div>
-    </header>
-
+    
         <div class="menu">
-                
-            <svg viewbox="1 -1 100 10" width="0" height="0">
+            <svg viewbox="0 -1 100 100" width="0" height="0">
                 <defs>
                     <clipPath id="mask1" clipPathUnits="objectBoundingBox">
                         <path
                               transform="scale(0.00135, 0.00254)"
-                              d="M 0, 50 L 235, 50 Q 245, 50 245, 25 L 245, 30 Q 245, 0 255, 0 L 1000, 0 737, 350 0, 350">
+                              d="M 0 100 
+                                L 100 100 
+                                Q 150 100 
+                                  200 50 
+                                T 300 0 
+                                L 1000 0 
+                                  1000 500
+                                  0 500">
                         </path>
                     </clipPath>
                 </defs>
             </svg>
                 <img src="./assets/hero.jpg" alt="">
             <div class="gradient"></div>
-            </div>
+            
 
             <nav class="subnav">
                 <ul>
@@ -58,13 +65,6 @@
                     <li><a class="responsive" href="#">Contact</a></li>
                 </ul>
             </nav>
-
-            <div class="breadcrumbs">
-                <ul class="crumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="kennisbank.html">Kennisbank</a></li>
-                    <li>Kennisbank redactie</li>
-                </ul>
             </div>
 
             <div class="wrapper">
