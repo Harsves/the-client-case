@@ -495,7 +495,7 @@ and (min-width : 750px) {
     /* Header  */
 
     .site-identity img {
-        width: 25rem;
+        width: 20rem;
         transform: translate(0px, 20px);
     }
 
