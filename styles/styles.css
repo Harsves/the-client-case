@@ -5,14 +5,14 @@
     line-height: 1.4;
 }
 
-html {
+/* html {
     height: 100vh;
    
 }
 
 body {
     height: 100vh;
-}
+} */
 
 /* Header */
 
@@ -31,15 +31,88 @@ header {
 
 /* Footer */
 
+footer {
+    margin-top: 50px;
+}
+
 footer > svg {
     stroke: #B9005F;
     fill: none;
 }
 
-footer > img {
-    width: 100%;
+.wrapper-footer > img {
+    width: 100vw;
 }
 
+.contact-footer > h2 {
+    font-size: 42px;
+    margin-bottom: 0px;
+    
+}
+
+.form-footer > h2 {
+    font-size: 42px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.contact-form {
+    font-family: fira-sans-2, sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-left: 20px;
+}
+  
+.row label{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+  
+input[type=text], textarea {
+    border-radius: 10px;
+    margin: auto 0;
+    color: black;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    font-family: fira-sans-2, sans-serif;
+    font-weight: 500;
+}
+  
+input[type=text] {
+    height: 35px;
+    border: 1px solid black;
+}
+  
+input[type=submit] {
+    color: #B9005F;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+input[type=submit]:hover {
+    background-color: #B9005F;
+    color: white;
+}
+
+input[type=submit]:active {
+    background-color: #B9005F;
+    color: white;
+}
 
 /* Body */
 
@@ -521,6 +594,44 @@ and (min-width : 750px) {
         align-items: center;
         box-shadow: none;
     }
+
+    /* Footer */
+
+    footer > svg {
+        stroke-width: 0.5px;
+    }
+
+    .wrapper-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'image contact form';
+        row-gap: 10px;
+        justify-items: center;
+    }
+
+    .wrapper-footer > img {
+        width: 100%;
+    }
+
+    .image-footer {
+        grid-area: image;
+    }
+
+    .contact-footer {
+        grid-area: contact;;
+    }
+
+    .form-footer {
+        grid-area: form;
+        width: 80%;
+    }
+   
+
+
+
+
 
     /* Menu */
 
