@@ -29,6 +29,18 @@ header {
     width: 15rem;
 }
 
+/* Footer */
+
+footer > svg {
+    stroke: #B9005F;
+    fill: none;
+}
+
+footer > img {
+    width: 100%;
+}
+
+
 /* Body */
 
 .hero {
