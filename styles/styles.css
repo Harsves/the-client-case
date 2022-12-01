@@ -394,7 +394,7 @@ h2 {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
-    max-width: 15rem;
+    max-width: 25rem;
 }
 
 .info  a {
@@ -421,7 +421,7 @@ h2 {
 
 .info > svg {
     padding-left: 10px;
-    width: 150px;
+    width: 75px;
     fill: #0b6ba2;
 }
 
@@ -470,12 +470,12 @@ h2 {
     font-style: normal;
     text-decoration: none;
     margin: 10px; 
-    max-width: 15rem;
+    max-width: 25rem;
 }
 
 .warning > svg {
     padding-left: 10px;
-    width: 50px;
+    width: 75px;
     fill: #c96d18;
 }
 
