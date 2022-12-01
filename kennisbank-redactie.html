@@ -27,12 +27,17 @@
             </nav>
     
             <div id="dropdown" class="dropdown-content">
-                <a href="kennisbank-redactie.html">Kennisbank redactie</a>
-                <a href="kennisbank-techniek.html">Kennisbank techniek</a>
-                <!-- <a href="die-ene.html">Die ene</a>
-                <a href="codesnuivers.html">Codesnuivers</a>
-                <a href="docenten.html">Docenten</a> -->
-            </div>
+              <ul class="dropdown-main">
+              <li><a href="richtlijnen.html">Richtlijnen</a></li>
+              <li><a href="kennisbank.html">Kennisbank</a></li>
+              <ul class="dropdow-sub">
+              <li><a href="kennisbank-redactie.html">Redactie</a></li>
+              <li><a href="kennisbank-techniek.html">Techniek</a></li>
+              <li><a href="kennisbank-vormgeving.html">Vormgeving</a></li>
+          </ul>
+          <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
         </header>
 
     
@@ -62,13 +67,21 @@
                 <ul>
                     <li><a class="richtlijnen" href="richtlijnen.html">Richtlijnen</a></li>
                     <li><a class="active" href="kennisbank.html">Kennisbank</a></li>
-                    <li><a class="responsive" href="#">Contact</a></li>
+                    <li><a class="responsive" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             </div>
 
+            <div class="breadcrumbs">
+              <ul class="crumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="kennisbank.html">Kennisbank</a></li>
+                  <li>Kennisbank redactie</li>
+              </ul>
+          </div>
+
             <div class="wrapper">
-            <h1>Kennisbank</h1>
+            <h1>Redactie</h1>
 
         <div class="afbeeldingen">
             <h2>Afbeeldingen</h2>
@@ -129,8 +142,282 @@
             <li>...
     </div></script>
         </details>
-          
+
+        <details>
+          <summary>Gebruik geen afbeeldingen van tekst</summary>
+          <p>Gebruik geen afbeeldingen van tekst om informatie over te dragen. Afbeeldingen van tekst zijn voor sommige bezoekers niet handig. De lettergrootte in een afbeelding schaalt namelijk vaak niet goed mee. Ook kunnen bezoekers tekst die is ingebakken in een afbeelding niet aanpassen naar eigen voorkeuren.</p>
+          <p>Daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan goed worden vormgegeven met CSS. Hiermee kan bijvoorbeeld de kleur, het lettertype, de lettergrootte, de regelhoogte en de letterafstand en worden ingesteld. Eventueel kan tekst met CSS ook bovenop een afbeelding worden geplaatst.</p>
+          <div class="info">
+            <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+            <div class="inner-wrap">
+                <p>Er zijn een paar uitzonderingen waarbij een afbeelding van tekst wél mag worden gebruikt:</p>  
+                <ol>
+                  <li>Met HTML en CSS kan niet dezelfde visuele weergave worden bereikt.</li>
+                  <li>De weergave van de tekst in de afbeelding is essentieel voor de informatie die wordt overgebracht.</li>
+                  <li>De afbeelding van tekst kan worden aangepast naar de voorkeuren van de bezoeker.</li>
+                </ol>
+              </div>
             </div>
+        </details>
+
+        <details>
+          <summary>Gebruik geen content dat meer dan 3 keer per seconde flitst</summary>
+          <p>Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde flitsen. Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken naar knipperende of flitsende afbeeldingen of media.</p>
+        </details>
+            </div>
+            
+            <div class="formulieren">
+              <h2>Formulieren</h2>
+
+              <details>
+                <summary>Zorg voor duidelijke labels en instructies bij invoervelden</summary>
+                <h4>Zorg voor labels bij invoervelden</h4>
+                <p>Labels zijn het belangrijkste element voor een toegankelijk formulier. Zorg voor labels bij alle invoervelden of ander formulierelementen zoals selectievakjes, keuzerondjes en keuzelijsten. Een duidelijk label beschrijft precies wat er in het veld ingevuld moet worden, is zichtbaar voor alle bezoekers en staat dichtbij het invoerveld.</p>
+                <p>Het label moet in de code worden gekoppeld aan het invoerveld. Zo maak je het invoerveld ook toegankelijk voor bezoekers die gebruik maken van hulptechnologieën. Het label is de naam van het invoerveld. Een label vergroot ook het klikbare gebied waarmee een invoerveld kan worden geselecteerd. Dit is handig voor bijvoorbeeld bezoekers met een motorische beperking.</p>
+                <h5>Koppel labels in de code aan een invoerveld</h5>
+                <p>Labels worden geplaatst met het <code>&lt;label&gt;</code>-element. Het koppelen van een <code>&lt;label&gt;</code>-element aan een formulierelement gebeurt met een <code>for</code>/<code>id</code>-koppeling. Geef hiervoor het <code>&lt;label&gt;</code>-element een <code>for</code>-attribuut en het bijbehorende formulierelement een <code>id</code>-attribuut met dezelfde waarde.</p>
+                <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><label for="veld1">Naam:</label>
+  <input type="text" id="veld1">
+  
+  <label for="veld2">Kies je kleur:</label>
+  <select id="veld2">
+    <option value="0">Rood</option>
+    <option value="1">Groen</option>
+    <option value="2">Blauw</option>
+  </select>
+  
+  <input type="checkbox" id="veld3">
+  <label for="veld3">Meld mij aan voor de nieuwsbrief</label></script>
+              <p>Er zijn ook manieren om de labels visueel te verbergen. Vraag je dan wel goed af waarom je dat zou willen doen. Het invoerveld verliest dan het grotere klikbare gebied en het wordt misschien minder duidelijk voor bezoekers. Als het label toch visueel wordt verborgen, zorg er dan er wel voor dat er een label beschikbaar is voor hulptechnologieën. Gebruik hiervoor het attribuut <code>aria-label</code>, <code>aria-labelledby</code> of een <code>title</code>-attribuut. Deze zijn niet zichtbaar.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><input type="text" aria-label="Naam"></script>
+              <div class="warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                <p>Let op: Placeholdertekst mag niet als enige manier worden gebruikt om een label toe te voegen aan een invoerveld.</p>
+              </div>
+              <h5>Groepeer meerdere secties van gerelateerde invoervelden</h5>
+              <p>Als een formulier meerdere secties van gerelateerde invoervelden heeft dan wordt een <code>&lt;fieldset&gt;</code>-element gebruikt om deze te groeperen. Geef het <code>&lt;fieldset&gt;</code>-element een label door een <code>&lt;legend&gt;</code>-element in het <code>&lt;fieldset&gt;</code>-element te plaatsen. Hulptechnologieën gebruiken het <code>&lt;legend&gt;</code>-element alsof het een onderdeel is van het label van de elementen in het <code>&lt;fieldset&gt;</code>-element.</p>
+              <p>Het <code>&lt;fieldset&gt;</code>-element is vooral relevant voor het groeperen selectierondjes en keuzevakjes maar kan ook worden gebruikt om andere invoervelden te groeperen.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><fieldset>
+  <legend>Ben jij al orgaandonor?</legend>
+
+  <input type="radio" id="veld1">
+  <label for="veld1" value="ja">Ja, ik ben orgaandonor</label>
+
+  <input type="radio" id="veld2">
+  <label for="veld2" value="nee">Nee, ik ben geen orgaandonor</label>
+</fieldset></script>
+              <h4>Zorg voor instructies bij invoervelden</h4>
+              <p>Instructies geven een extra hint voor de invoer in het invoerveld. De instructies in een formulier moeten aangeven of er verplichte velden zijn en eventueel of er een verplicht invoerformaat is.</p>
+              <h5>Geef aan dat een invoerveld verplicht is</h5>
+              <p>Het aangeven van een verplicht invoerveld kan in tekst of bijvoorbeeld met een asteriks (*). Zorg dat deze aanduiding in het <code>&lt;fieldset&gt;</code>-element is geplaatst.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><label for="veld1">Naam: (verplicht)</label>
+  <input type="text" id="veld1">
+</script>
+              <p>Als de instructies niet duidelijk per invoerveld worden benoemd dan hoort voorafgaand aan het eerste invoerveld in tekst worden aangegeven op welke manier de verplichte velden zijn aangeduid.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><p>Alle velden met een * zijn verplicht.</p>
+
+  <label for="veld1">Naam: *</label>
+  <input type="text" id="veld1">
+  
+  <label for="veld2">Favoriete dier: *</label>
+  <input type="text" id="veld2">
+</script>
+              <p>Markeer verplichte velden ook in de code. Gebruik hiervoor bij voorkeur het <code>aria-required</code>-attribuut.</p>
+<script type="text/plain" class="language-html"><p>Alle velden met een * zijn verplicht.</p>
+
+  <label for="veld1">Naam: *</label>
+  <input type="text" id="veld1" aria-required="true">
+  
+  <fieldset>
+    <legend>Ben jij al orgaandonor? *</legend>
+  
+    <input type="radio" id="veld2" value="ja" aria-required="true">
+    <label for="veld2">Ja, ik ben orgaandonor</label>
+  
+    <input type="radio" id="veld3" value="nee" aria-required="true">
+    <label for="veld3">Nee, ik ben geen orgaandonor</label>
+  </fieldset>
+</script>
+              <h5>Geef het aan als er een verplicht invoerformaat is verplicht is</h5>
+              <p>Ook bij verplichte invoerformaten, zoals een postcode of een e-mailadres die moet worden ingevuld, moeten blijken uit de instructies wat de eisen zijn aan de invoer. Dit kan direct in het <code>&lt;fieldset&gt;</code>-element.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><label for="veld1">Geboortedatum (dd-mm-jjjj):</label>
+  <input type="text" id="veld1">
+</script>
+                <p>Maar dit kan ook via het attribuut <code>aria-describedby</code>.</p>
+                <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><label for="veld1">Geboortedatum:</label>
+  <input type="text" id="veld1" aria-describedby="beschrijving">
+  <span id="beschrijving">dd-mm-jjjj</span>
+</script>
+            </details>
+
+            <details>
+              <summary>Als een formulierveld verkeerd is ingevuld, benoem dan waar de fout zit en beschrijf wat de fout is</summary>
+              <p>Bij formulieren hoort een foutcontrole ingebouwd te zijn. De foutcontrole controleert automatisch of een verplicht onderdeel leeg is gelaten of dat een invoerveld verkeerd is ingevuld. Als er een fout is gevonden, dan moet de foutmelding in tekst worden weergegeven. Deze tekst kan worden aangevuld met andere visuele aanwijzingen, zoals een andere kleur of een icoon.</p>
+              <p>Benoem in de tekst van de foutmelding de naam van het veld dat verkeerd is ingevuld en benoem precies wat de fout is. Schrijf dus niet:</p>
+              <ul>
+                <li>Dit veld is verplicht.</li>
+              </ul>
+              <p>Maar schrijf:</p>
+              <ul>
+                <li>Het veld ‘Telefoonnummer’ mag niet leeg zijn.</li>
+              </ul>
+              <p>In de code kan ook worden aangegeven welk veld verkeerd is ingevuld. Gebruik hiervoor het attribuut <code>aria-invalid</code>. Daarnaast hoort de foutmelding in de code aan het bijbehorende invoerveld te worden gekoppeld. Dit voorkomt verwarring bij bezoekers die gebruik maken van hulptechnologieën. Een foutmelding kan op een aantal manieren worden gekoppeld zoals met een <code>aria-describedby</code>-attribuut.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><label for="veld1">Telefoonnummer:</label>
+  <input type="text" id="veld1" aria-invalid="true" aria-describedby="fout">
+  <span id="fout">Het veld ‘Telefoonnummer’ mag niet leeg zijn.</span></script>
+            </details>
+          </div>
+
+          <div class="media">
+            <h3>Media</h3>
+            <details>
+            <summary>Geef media een kort tekstalternatief</summary>
+            <p>Alle mediabestanden moeten een korte tekstuele introductie hebben, ook als er volledige alternatieven zoals een transcript of audiodesciptie aanwezig zijn. Zo’n korte introductie moet de inhoud van het mediabestand globaal beschrijven. Met deze informatie kunnen bezoekers zelf beslissen wat ze met het mediabestand willen doen. Dit is vooral handig voor bezoekers die de content niet gemakkelijk kunnen scannen, zoals bezoekers die gebruik maken van schermlezers.</p>
+            <p>Een korte tekstuele introductie kan worden gegeven met een beschrijvende kop, een beschrijvende titel of eventueel een beschrijvend label.</p>
+          </details>
+
+            <details>
+              <summary>Plaats een transcript bij geluidsfragmenten en bewegende beelden</summary>
+            <p>Alle geluidsfragmenten en bewegende beelden moeten een transcript hebben. Ook voor filmpjes kan een transcript een waardevolle toevoeging zijn. Een transcript is een uitgeschreven tekst waarin alles wordt beschreven dat te zien, te horen en te doen is. Bijvoorbeeld alle gesproken tekst, maar ook de belangrijke beelden en geluiden. Eventuele interactieve elementen, zoals een link, moeten ook worden opgenomen in een transcript.</p>
+            <p>Een goed transcript:</p>
+            <ul>
+              <li>bevat alle gesproken tekst.</li>
+              <li>beschrijft alle belangrijke beelden.</li>
+              <li>beschrijft alle belangrijke geluiden.</li>
+              <li>bevat alle links.</li>
+              <li>beschrijft wie er spreekt als dit belangrijk is.</li>
+              <li>benadrukt het volume van de spreker als dit belangrijk is.</li>
+            </ul>
+            <p>Een transcript moet voor alle bezoekers gemakkelijk te bereiken zijn. Plaats een transcript, of een link naar het transcript, altijd direct onder de code van het mediabestand.</p>
+            <p>Aan geluidsfragmenten moet altijd een transcript worden toegevoegd. Aan bewegende beelden moet alleen een transcript worden toegevoegd als er geen audiodescriptie aanwezig is. Voor filmpjes geldt dat dit alleen verplicht is als er interactieve elementen in het filmpje aanwezig zijn.</p>
+            </details>
+
+            <details>
+              <summary>Voeg ondertitels toe aan filmpjes</summary>
+              <p>Alle filmpjes moeten ondertitels voor doven en slechthorenden hebben. In ondertitels voor doven en slechthorenden moeten de gesproken tekst én de belangrijke geluiden worden overgenomen. Belangrijk geluiden zijn bijvoorbeeld een deurbel of een explosie. Ook muziek kan belangrijk zijn om het filmpje of de sfeer in het filmpje te kunnen begrijpen.</p>
+              <p>Goede ondertitels:</p>
+              <ul>
+                <li>bevat alle gesproken tekst.</li>
+                <li>beschrijven alle belangrijke geluiden.</li>
+                <li>beschrijven wie er spreekt als dit niet direct duidelijk is.</li>
+                <li>benadrukken het volume van de spreker als dit belangrijk is.</li>
+                <li>zijn goed zichtbaar.</li>
+                <li>lopen zo veel mogelijk gelijk met het geluid.</li>
+                <li>bedekken geen andere informatie.</li>
+              </ul>
+            <p>Het is niet erg als de gesproken tekst een heel klein beetje wordt versimpeld om de ondertitels niet te lang te maken.</p>
+            <p>Er zijn verschillende manieren om ondertitels toe te voegen: ingebakken in het filmpje (open captions) of toegevoegd als een apart ondertitelbestand bij het filmpje (closed captions)</p>
+            iv class="info">
+            <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+            <div class="inner-wrap">
+                <p>Ondertitels toevoegen op de grote videoplatformen:</p>  
+                <ol>
+                  <li>Youtube: <a href="https://support.google.com/youtube/answer/2734796?hl=nl">Je eigen ondertiteling toevoegen</a></li>
+                  <li>Vimeo: <a href="https://vimeo.zendesk.com/hc/en-us/articles/224968828-Captions-and-subtitles">Adding captions or subtitles to your video (Engelstalig)</a></li>
+                </ol>
+              </div>
+            
+            </details>
+
+            <details>
+              <summary>Voeg een audiodescriptie toe aan filmpjes</summary>
+              <p>In filmpjes wordt soms niet alle zichtbare informatie óók met geluid overgedragen. Sommige dingen zijn wel te zien, maar niet te horen. Deze visuele informatie moet met een audiodescriptie worden toegevoegd aan het filmpje. In een audiodescriptie vertelt een voice-over over belangrijke zichtbare beelden die niet zijn af te leiden uit dat wat te horen is in het filmpje. Dat kan bijvoorbeeld gaan om handelingen, personen maar ook om tekst die alleen in het beeld te zien is. Dit gebeurt op de momenten dat er pauzes zijn in het originele geluid van het filmpje. Zo kunnen bezoekers die blind of slechtziend zijn het filmpje ook goed volgen.</p>
+              <p>Er zijn verschillende manieren om een audiodescriptie toe te voegen: toegevoegd in het geluid van het filmpje of toegevoegd als alternatief audiospoor.</p>
+              <div class="warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                <p>Let op: Een extra audiospoor wordt (nog) niet ondersteund op de grote videoplatformen.</p>
+            </div>
+            <p>Een audiodescriptie hoort zo veel mogelijk samen te vallen met de beschreven zichtbare informatie.</p>
+            <p>Voor filmpjes is een audiodescriptie niet altijd nodig. Als alle zichtbare informatie ook te horen is, dan is het niet verplicht. Aan bewegende beelden moet alleen een audiodescriptie worden toegevoegd als er geen transcript aanwezig is.</p>
+          </details>
+
+          <details>
+            <summary>Gebruik geen content dat meer dan 3 keer per seconde flitst</summary>
+            <p>Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde flitsen. Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken naar knipperende of flitsende afbeeldingen of media.</p>
+          </details>
+          </div>
+        </div>
+          <div class="navigatie">
+            <h3>Navigatie</h3>
+            <details>
+              <summary>Geef webpagina's een titel die het onderwerp of doel van de pagina beschrijft</summary>
+              <p>De paginatitel van een webpagina moet het onderwerp of doel van de pagina beschrijven. Een beschrijvende paginatitel maakt het voor iedereen makkelijker om te navigeren door de website. Paginatitels worden getoond in het venster van de browser of in het tabblad van de pagina. Met een goede paginatitel kunnen bezoekers de pagina gemakkelijk terugvinden als er bijvoorbeeld meerdere tabbladen open staan.</p>
+              <p>Goede paginatitels:</p>
+              <ul>
+                <li>beschrijven duidelijk het onderwerp of doel van de pagina.</li>
+                <li>veranderen als een nieuwe pagina wordt ingeladen.</li>
+                <li>hebben de unieke informatie vooraan.</li>
+                <li>zijn uniform met de andere pagina’s.</li>
+                <li>zijn beknopt.</li>
+                <li>zijn uniek.</li>
+              </ul>
+              <p>Paginatitels worden door hulptechnologieën gebruikt om de webpagina aan te duiden. Deze informatie wordt als eerst gepresenteerd bij het openen van een pagina.</p>
+              <p>Gebruik het <code>title</code>-element in het <code>&lt;head&gt;</code>-element in de code van de pagina. Beschrijf in dit element het onderwerp of doel van de pagina.</p>
+              <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><html lang="nl">
+  <head>
+    <title>WCAG.nl - Digitale toegankelijkheid voor iedereen</title>
+    ...
+  </head>
+...
+</html></script>
+              <div class="info">
+                <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                    <p>In een CMS kan de paginatitel vaak per pagina van de website worden ingesteld.</p>
+                </div>
+            </details>
+
+            <details>
+              <summary>Geef links een linktekst die het doel van de link beschrijft</summary>
+              <p>Geef links op een webpagina een linktekst waaruit het doel van de link duidelijk is af te leiden. Een beschrijvende linktekst is voor iedereen duidelijker. Zorg dat de linktekst zo is geformuleerd dat bezoekers direct weten waar de link naar verwijst.</p>
+              <p>Schrijf dus niet:</p>
+              <ul>
+                <li>Lees meer. (onduidelijk)</li>
+                <li>LinkedIn. (onduidelijk)</li>
+              </ul>
+              <p>Maar zeg wel:</p>
+              <ul>
+                <li>Lees meer de over digitale toegankelijkheid.</li>
+                <li>Ga naar onze LinkedIn pagina.</li>
+              </ul>
+              <div class="info">
+                <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                    <p>Tip: Als je verwijst naar een e-mailadres, gebruik dan het volledige e-mailadres als linktekst.</p>
+                </div>
+                <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links gebruiken om over de pagina te navigeren.</p>
+                <p>Als het echt niet anders kan, dan mag ook nog de context van de link worden gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin, paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden uitgebreid met het <code>aria-label</code>-attribuut of met het <code>title</code>-attribuut.</p>
+                <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><a href="info.html" aria-label="Lees meer over digitale toegankelijkheid">Lees meer</a>
+
+  <a href="info.html" title="Lees meer over digitale toegankelijkheid">Lees meer</a></script>
+<script type="text/plain" class="language-html"><a href="info.html">Lees meer <span class="assistive">over digitale toegankelijkheid</span></a>
+</script>
+<script type="text/plain" class="language-css">.assistive {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}</script>
+              <div class="warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                <p>Let op: Linkteksten die worden uitgebreid met behulp van CSS of het <code>aria-label</code>-attribuut zijn alleen zichtbaar voor bezoekers die gebruik maken van een schermlezer.</p>
+              </div>
+
+            </details>
+
+
+          </div>
+
             </div>
 
             <a href="#" class="to-top">
