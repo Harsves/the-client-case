@@ -430,7 +430,7 @@
               <p>Deze contrasteisen gelden ook voor tekst op afbeeldingen.</p>
               <div class="warning">
                 <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
-                <p>Let op: Deze contrastverhoudingen mogen <strong>niet</strong> naar boven worden afgerond. De contrastverhouding tussen de hexadecimale kleurcodes #777777 (grijs) en #FFFFFF (wit) is 4,47:1. Dit is dus niet genoeg.</p>
+                <p>Let op: Deze contrastverhoudingen mogen <b>niet</b> naar boven worden afgerond. De contrastverhouding tussen de hexadecimale kleurcodes #777777 (grijs) en #FFFFFF (wit) is 4,47:1. Dit is dus niet genoeg.</p>
             </div>
             <div class="info">
               <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
@@ -551,18 +551,145 @@
   ...
 </ol></script>
                   <h3>Lijst met beschrijvingen</h3>
-                  <p>Gebruik een lijst met beschrijvingen bij lijsten die bestaan uit een naam, term of begrip met een beschrijving die daar bij hoort. Gebruik deze lijsten bijvoorbeeld voor een verklarende woordenlijst. Binnen een lijst met beschrijvingen wordt het <dt>-element gebruikt om een term aan te geven en wordt het <dd>-element om de beschrijving aan te geven.</p>
+                  <p>Gebruik een lijst met beschrijvingen bij lijsten die bestaan uit een naam, term of begrip met een beschrijving die daar bij hoort. Gebruik deze lijsten bijvoorbeeld voor een verklarende woordenlijst. Binnen een lijst met beschrijvingen wordt het <code>&lt;dl&gt;</code>-element gebruikt om een term aan te geven en wordt het <code>&lt;dd&gt;</code>-element om de beschrijving aan te geven.</p>
+                  <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><dl>
+  <dt>conformiteit</dt>
+  <dd>voldoen aan alle eisen van een gegeven standaard, richtlijn of specificatie</dd>
+  <dt>content (webcontent)</dt>
+  <dd>informatie en zintuiglijke ervaring die aan de gebruiker doorgegeven wordt door middel van een user agent, met inbegrip van code of opmaak die de structuur, presentatie en interacties van de content definieert</dd>
+</dl></script>
+                  <div class="info">
+                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                        <p>In een CMS kan een tekst worden geselecteerd en worden aangegeven dat het een lijst is. Je kunt hierbij vaak kiezen voor een opsomming of een genummerde lijst. Dit maakt de tekst automatisch op met het juiste HTML-element.</p>
+                    </div>
+                    <div class="warning">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                      <p>Let op: Een lijst met beschrijvingen wordt vaak nog niet ondersteund.</p>
+                  </div>
+                </details>
 
-              </details>
+                <details>
+                  <summary>Zorg dat tabellen zijn opgemaakt met een tabel-element</summary>
+                  <p>Tabellen bestaan uit rijen en kolommen. De gegevens in de rijen en kolommen hebben een onderlinge relatie met elkaar. Voor bezoekers met een visuele beperking is deze relatie niet direct duidelijk. Voor deze bezoekers is het belangrijk dat deze relaties ook in de code wordt vastgelegd.</p>
+                  <p>Structuur en relaties die alleen worden overgebracht met vormgeving kan door bezoekers die blind of slechtziend zijn niet (of niet goed) worden waargenomen. Voor deze bezoekers is het belangrijk om structuur ook in de code vast te leggen. Zo kan software de structuur en relaties op de webpagina ook bepalen.</p>
+                  <p>Bezoekers die gebruik maken van een schermlezer kunnen makkelijker door een lijst navigeren. Schermlezers geven bijvoorbeeld aan hoeveel onderdelen er in de lijst staan en bieden de mogelijkheid om de lijst gelijk over te slaan.</p>
+                  <p>Zorg dat lijsten worden opgemaakt met een tabel-element (<code>&lt;table&gt;</code>). In dit element moet ook worden aangegeven wat een tabelkop is en wat de gegevenscellen zijn. De tabelkoppen worden in de code vastgelegd met een <code>&lt;th&gt;</code>-element, gegevenscellen met een <code>&lt;th&gt;</code>-element.</p>
+                  <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><table>
+  <tr>
+    <th>Kop van de eerste kolom</th>
+    <th>Kop van de tweede kolom</th>
+    <th>Kop van de derde kolom</th>
+  </tr>
+  <tr>
+    <td>Gegevens in de eerste kolom</td>
+    <td>Gegevens in de tweede kolom</td>
+    <td>Gegevens in de derde kolom</td>
+  </tr>
+  ...
+</table></script>
+                  <p>Geef de tabel ook een korte beschrijving. Deze beschrijving wordt in de code vastgelegd met een <code>&lt;caption&gt;</code>-element. Een goede beschrijving helpt bezoekers om een tabel te vinden en te begrijpen waar de tabel over gaat.</p>
+                  <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><table>
+  <caption>Beschrijving van de tabel</caption>
+  <tr>
+    <th>Kop van de eerste kolom</th>
+    ...
+</table></script>
+                  <div class="info">
+                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                        <p>In een CMS kan (in veel gevallen) een tabel worden ingevoegd. Bepaal het aantal rijen en kolommen en bepaal nauwkeurig wat de tabelkoppen zijn. Dit maakt de tabel automatisch op met de juiste HTML-elementen.</p>
+                    </div>
+                </details>
+
+                <details>
+                  <summary>Geef links een linktekst die het doel van de link beschrijft</summary>
+                  <p>Geef links op een webpagina een linktekst waaruit het doel van de link duidelijk is af te leiden. Een beschrijvende linktekst is voor iedereen duidelijker. Zorg dat de linktekst zo is geformuleerd dat bezoekers direct weten waar de link naar verwijst.</p>
+                  <p>Schrijf dus niet:</p>
+                  <ul>
+                    <li>Lees meer. (onduidelijk)</li>
+                    <li>LinkedIn. (onduidelijk)</li>
+                  </ul>
+                  <p>Maar zeg wel:</p>
+                  <ul>
+                    <li>Lees meer de over digitale toegankelijkheid.</li>
+                    <li>Ga naar onze LinkedIn pagina.</li>
+                  </ul>
+                  <div class="info">
+                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                        <p>Tip: Als je verwijst naar een e-mailadres, gebruik dan het volledige e-mailadres als linktekst.</p>
+                    </div>
+                    <p>Bezoekers die gebruik maken van een schermlezer kunnen een lijst met alle links gebruiken om over de pagina te navigeren.</p>
+                    <p>Als het echt niet anders kan, dan mag ook nog de context van de link worden gebruikt om het doel van de link te beschrijven. Bijvoorbeeld dezelfde zin, paragraaf of in dezelfde tabelcel. De linktekst kan in de code ook worden uitgebreid met het <code>aria-label</code>-attribuut of met het <code>title</code>-attribuut.</p>
+                    <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html"><a href="info.html" aria-label="Lees meer over digitale toegankelijkheid">Lees meer</a>
+
+  <a href="info.html" title="Lees meer over digitale toegankelijkheid">Lees meer</a>
+  </script>
+                    <p>Wat ook kan is het verbergen van een deel van de linktekst met CSS:</p>
+<script type="text/plain" class="language-html"><a href="info.html">Lees meer <span class="assistive">over digitale toegankelijkheid</span></a></script>
+<script type="text/plain" class="language-css">.assistive {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}</script>
+                      <div class="warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="250px" height="auto" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/></svg>
+                        <p>Let op: Linkteksten die worden uitgebreid met behulp van CSS of het <code>aria-label</code>-attribuut zijn alleen zichtbaar voor bezoekers die gebruik maken van een schermlezer.</p>
+                      </div>
+                      <p>Een linktekst mag nooit leeg zijn. Zonder linktekst kan natuurlijk niet worden bepaald waar de link naar verwijst. Een lege link is misschien niet zichtbaar op de pagina maar deze links komen wél terug in de focus volgorde. Schermlezers merken deze ook link op.</p>
+                      <p>In de gevallen dat niet tekst maar alleen een afbeelding als link wordt gebruikt, spreken we over functionele afbeeldingen. Geef afbeeldingen die ook een link zijn een tekstalternatief dat beschrijft waar de link naar verwijst. Als er een afbeelding én een tekst gebruikt worden met allebei hetzelfde linkdoel, dan is het beter om deze te combineren tot één link. Voor bezoekers die gebruik maken van hulptechnologieën kan het storend zijn als dezelfde link twee keer direct na elkaar voorkomt.</p>
+                </details>
+
+                <details>
+                  <summary>Gebruik in instructies geen onderdelen die alleen worden aangeduid met kleur, vorm of locatie</summary>
+                  <p>Verwijs in instructies niet alleen naar zintuiglijke eigenschappen van componenten zoals vorm, kleur, omvang, locatie, oriëntatie of geluid. Gebruik daarnaast ook tekst.</p>
+                  <p>Schrijf dus niet:</p>
+                  <ul>
+                    <li>Gebruik de <b>ronde</b> knop om je gegevens te verzenden. (vorm)</li>
+                    <li>Op de dagen met een <b>groen</b> bolletje zijn wij beschikbaar. (kleur)</li>
+                    <li>Klik op de knop <b>rechts onderaan</b> de pagina om naar de volgende pagina te gaan. (locatie)</li>
+                  </ul>
+                  <p>Maar zeg wel:</p>
+                  <ul>
+                    <li>Gebruik de (ronde, groene) knop (onderaan) met tekst “Verzenden” om je gegevens te in te sturen.</li>
+                  </ul>
+                  <p>Instructies waarin alleen zintuiglijke eigenschappen worden gebruikt zijn niet door alle bezoekers goed te volgen. Zo kunnen bezoekers die blind of slechtziend zijn vorm, omvang of locatie niet waarnemen. Instructies waarin alleen geluid wordt gebruikt zijn niet, of niet goed, te volgen voor bezoekers die doof of slechthorend zijn.</p>
+                </details>
+
+                <details>
+                  <summary>Geef de taal van de pagina aan</summary>
+                  <p>Geef de standaard taal van een webpagina aan in de code. Zo kan software de taal van de webpagina bepalen. Als er meerdere talen op een webpagina voorkomen, gebruik dan de taal die het meest voorkomt.</p>
+                  <p>Voorleessoftware spreekt een webpagina uit. De uitspraak van de woorden is afhankelijk van de taal van de pagina. Als er geen (of een verkeerde) taal wordt aangegeven in de code, dan kan voorleessoftware de content mogelijk verkeerd of onduidelijk voorlezen. De standaardtaal van de browser wordt dan gebruikt en deze komt niet altijd overeen met de taal van de content.</p>
+                  <p>Voeg het <code>lang</code>-attribuut toe aan -element om de taal van een webpagina in te stellen. Gebruik in dit attribuut de juiste taalcode. Zo’n taalcode bestaat uit een tweeletterige code.</p>
+                  <p>In de code ziet dat er zo uit:</p>
+<script type="text/plain" class="language-html">&lt;html lang="nl">
+  ...
+  </html></script>
+                  <p>Voor alle talen bestaat een eigen aanduiding. Voor het Nederlands is dat <code>‘nl‘</code> <code>(lang="nl")</code>, voor het Engels <code>‘en‘</code> <code>(lang="en")</code>, voor het Duits <code>‘de‘</code> <code>(lang="de")</code>. Bekijk alle taalcodes op <a href="http://www.iana.org/assignments/language-subtag-registry">IANA Language Subtag Registry (Engelstalig)</a>.</p>
+                  <div class="info">
+                    <svg style="color: #0b6ba2" xmlns="http://www.w3.org/2000/svg" width="250" height="auto" viewBox="0 0 512 512"><title>ionicons-v5-f</title><path d="M256,56C145.72,56,56,145.72,56,256s89.72,200,200,200,200-89.72,200-200S366.28,56,256,56Zm0,82a26,26,0,1,1-26,26A26,26,0,0,1,256,138Zm64,226H200V332h44V244H212V212h64V332h44Z" fill="#0b6ba2"></path></svg>
+                        <p>In een CMS kan de taal van een website worden aangegeven in de instellingen.</p>
+                    </div>
+                </details>
+
+
           </div>
+
+          
+
             </div>
              
 
-            <a href="#" class="to-top" aria-label="Ga naar boven"></a>>
+            <!-- <a href="#" class="to-top" aria-label="Ga naar boven"></a>>
                 <svg xmlns="http://www.w3.org/2000/svg" width="116.038" height="116.038" viewBox="0 0 116.038 116.038">
                     <path id="Icon_awesome-arrow-alt-circle-up" data-name="Icon awesome-arrow-alt-circle-up" d="M.563,58.581A58.019,58.019,0,1,1,58.581,116.6,58.009,58.009,0,0,1,.563,58.581ZM68.875,85.719V58.581H85.462a2.809,2.809,0,0,0,1.989-4.8L60.57,27.045a2.782,2.782,0,0,0-3.954,0l-26.9,26.74a2.807,2.807,0,0,0,1.989,4.8H48.288V85.719A2.816,2.816,0,0,0,51.1,88.526H66.068A2.816,2.816,0,0,0,68.875,85.719Z" transform="translate(-0.563 -0.563)"/>
                   </svg>                  
-                </a>
+                </a> -->
 
             <footer>
                     
@@ -624,29 +751,19 @@
                   <div class="form-footer">
                     <h2>Stuur een bericht</h2>
                     <form class="contact-form">
-                        <div class="form">
-                          <label class="required" for="name">Naam</label><br />
-                          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                          <span id="name_validation" class="error_message"></span>
-                        </div>
-                        <div class="form">
-                          <label class="required" for="email">Email</label><br />
-                          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                          <span id="email_validation" class="error_message"></span>
-                        </div>
-                        <div class="form">
-                            <label class="required" for="text">Onderwerp</label><br />
-                            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                            <span id="email_validation" class="error_message"></span>
-                          </div>
-                        <div class="form">
-                          <label class="required" for="message">Bericht</label><br />
-                          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                          <span id="message_validation" class="error_message"></span>
-                        </div>
-                          
-                          <input id="submit_button" type="submit" value="Versturen" />
-                      </form>
+                      <div class="form">
+                          <label for="name">Naam <span> *</span>
+                          <input id="name" type="text" required size="30"></label>
+                      
+                          <label for="email">Email <span> *</span>
+                          <input id="email" type="email" required size="30"></label>
+
+                          <label for="message">Bericht <span> *</span>
+                          <textarea id="message" rows="7" cols="30" required></textarea>
+
+                          <input id="submit_button" type="submit" value="Versturen"/>
+                      </div>
+                    </form>
                   </div>
 
                 </div>

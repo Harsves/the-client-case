@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://use.typekit.net/pmz7aza.css">
-        <title>Home</title>
+        <title>Contact</title>
         <script src="script.js"></script>
         <link rel="shortcut icon" href="assets/favicon.ico">
         <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
@@ -81,30 +81,20 @@
                 <div class="wrapper">
                     <h1>Contact</h1>
 
-                    <div class="form-contact">
-                        <p>Vragen of opmerkingen?</p>
-                        <h2>Stuur ons een bericht</h2>
-                        <form class="contact-form">
-                            <div class="form">
-                              <label class="required" for="name">Naam</label><br />
-                              <input id="name" class="input" name="name" type="text" size="30" /><br />
-                            </div>
-                            <div class="form">
-                              <label class="required" for="email">Email</label><br />
-                              <input id="email" class="input" name="email" type="text" size="30" /><br />
-                            </div>
-                            <div class="form">
-                                <label class="required" for="text">Onderwerp</label><br />
-                                <input id="email" class="input" name="email" type="text" size="30" /><br />
-                                <span id="email_validation" class="error_message"></span>
-                              </div>
-                            <div class="form">
-                              <label class="required" for="message">Bericht</label><br />
-                              <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                            </div>
-                              
-                              <input id="submit_button" type="submit" value="Versturen" />
-                          </form>
+                    <form class="form-contact">
+                      <div class="form">
+                          <label for="name">Naam <span> *</span>
+                          <input id="name" type="text" required size="30"></label>
+                      
+                          <label for="email">Email <span> *</span>
+                          <input id="email" type="email" required size="30"></label>
+
+                          <label for="message">Bericht <span> *</span>
+                          <textarea id="message" rows="7" cols="30" required></textarea>
+
+                          <input id="submit_button" type="submit" value="Versturen"/>
+                      </div>
+                    </form>
                       </div>
 
                 </div>
@@ -175,29 +165,19 @@
                       <div class="form-footer">
                         <h2>Stuur een bericht</h2>
                         <form class="contact-form">
-                            <div class="form">
-                              <label class="required" for="name">Naam</label><br />
-                              <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                              <span id="name_validation" class="error_message"></span>
-                            </div>
-                            <div class="form">
-                              <label class="required" for="email">Email</label><br />
-                              <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                              <span id="email_validation" class="error_message"></span>
-                            </div>
-                            <div class="form">
-                                <label class="required" for="text">Onderwerp</label><br />
-                                <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                                <span id="email_validation" class="error_message"></span>
-                              </div>
-                            <div class="form">
-                              <label class="required" for="message">Bericht</label><br />
-                              <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                              <span id="message_validation" class="error_message"></span>
-                            </div>
-                              
-                              <input id="submit_button" type="submit" value="Versturen" />
-                          </form>
+                          <div class="form">
+                              <label for="name">Naam <span> *</span>
+                              <input id="name" type="text" required size="30"></label>
+                          
+                              <label for="email">Email <span> *</span>
+                              <input id="email" type="email" required size="30"></label>
+  
+                              <label for="message">Bericht <span> *</span>
+                              <textarea id="message" rows="7" cols="30" required></textarea>
+  
+                              <input id="submit_button" type="submit" value="Versturen"/>
+                          </div>
+                        </form>
                       </div>
 
                     </div>
