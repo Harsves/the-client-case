@@ -607,7 +607,7 @@ footer > svg {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: stretch;
 }
   
 .row label{
@@ -741,6 +741,7 @@ and (min-width : 750px) {
     }
 
     .wrapper-footer > img {
+        margin-left: 10px;
         width: 100%;
     }
 
@@ -754,7 +755,7 @@ and (min-width : 750px) {
 
     .form-footer {
         grid-area: form;
-        width: 80%;
+        width: 70%;
     }
 
 
