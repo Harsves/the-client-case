@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="assets/favicon.ico">
         <link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon.ico">
     </head>
-    <body id="top" class="line-numbers">
+    <body class="line-numbers">
         <header>
 
             <div class="site-identity">
@@ -80,10 +80,20 @@
               </ul>
           </div>
 
+          <div class="content"></div>
+          <div class="side-nav">
+            <a href="#afbeeldingen">Afbeeldingen</a>
+            <a href="#formulieren">Formulieren</a>
+            <a href="#media">Media</a>
+            <a href="#navigatie">Navigatie</a>
+            <a href="#ontwerp">Ontwerp</a>
+            <a href="#teksten">Afbeeldingen</a>
+          </div>
+
             <div class="wrapper">
             <h1>Redactie</h1>
 
-        <div class="afbeeldingen">
+          <div class="afbeeldingen">
             <h2>Afbeeldingen</h2>
             
             <details>
@@ -166,7 +176,7 @@
         </details>
             </div>
             
-            <div class="formulieren">
+          <div class="formulieren">
               <h2>Formulieren</h2>
 
               <details>
@@ -274,7 +284,7 @@
   <input type="text" id="veld1" aria-invalid="true" aria-describedby="fout">
   <span id="fout">Het veld ‘Telefoonnummer’ mag niet leeg zijn.</span></script>
             </details>
-          </div>
+            </div>
 
           <div class="media">
             <h2>Media</h2>
@@ -343,9 +353,8 @@
             <summary>Gebruik geen content dat meer dan 3 keer per seconde flitst</summary>
             <p>Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde flitsen. Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken naar knipperende of flitsende afbeeldingen of media.</p>
           </details>
-          </div>
+            </div>
         
-
           <div class="navigatie">
             <h2>Navigatie</h2>
             <details>
@@ -415,7 +424,7 @@
               </div>
 
             </details>
-          </div>
+            </div>
 
           <div class="ontwerp">
             <h2>Ontwerp</h2>
@@ -455,9 +464,9 @@
                       De tekst op de knop bij een zoekveld is op alle pagina’s ‘zoeken’, en niet op sommige pagina’s ‘vinden’.</p>
                 </div>
             </details>
-          </div>
+            </div>
 
-          <div class="teksten">
+          <div id="teksten" class="teksten">
             <h2>Teksten</h2>
             <details>
               <summary>Geef webpagina's een titel die het onderwerp of doel van de pagina beschrijft</summary>
@@ -678,7 +687,7 @@
                 </details>
 
 
-          </div>
+            </div>
 
           
 
@@ -743,7 +752,6 @@
                 <div class="form-footer">
                   <h2>Stuur een bericht</h2>
                   <form class="contact-form">
-                    <form class="contact-form">
                       <div class="form">
                           <label for="name">Naam <span> (verplicht)</span>
                           <input id="name" type="text" required size="30"></label>

@@ -259,6 +259,15 @@ h1 {
     grid-area: kennisbank;
 }
 
+/* Site nav */
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+
 /* details */
 
 details {
@@ -674,6 +683,7 @@ input[type=submit]:active {
 .to-top.to-top-active > svg {
     height: auto;
     width: 60px;
+    cursor: pointer;
 }
 .to-top {
     background: white;
@@ -706,7 +716,7 @@ and (min-width : 750px) {
 
     .site-identity img {
         width: 20rem;
-        transform: translate(0px, 20px);
+        transform: translate(0px, 10px);
     }
 
     .show {
@@ -715,6 +725,10 @@ and (min-width : 750px) {
 
     .dropdown-content {
         width: 30vw;
+    }
+
+    .dropdown-nav {
+        transform: translate(0px, 10px);
     }
 
     header {
