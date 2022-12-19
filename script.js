@@ -15,7 +15,7 @@ document.addEventListener('click', (e)=> {
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 500) {
     toTop.classList.add("to-top-active");
   } else {
     toTop.classList.remove("to-top-active");
@@ -32,5 +32,15 @@ window.addEventListener('scroll', () => {
     headerShadow.classList.add("headershadow");
   } else {
     headerShadow.classList.remove("headershadow");
+  }
+})
+
+const sideNav = document.querySelector(".side-nav");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 500) {
+    sideNav.classList.add("side-nav-active");
+  } else {
+    sideNav.classList.remove("side-nav-active");
   }
 })
